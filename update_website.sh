@@ -1,8 +1,10 @@
+GIT_REPO_URL="https://github.com/SamLab17/314-Website.git"
+
 echo "Creating backup of public_html"
 cp -r public_html public_html_backup
 
 echo "Pulling website repo"
-git clone https://github.com/SamLab17/314-Website.git 314Website
+git clone ${GIT_REPO_URL} 314Website
 
 echo "Copying files into public_html"
 cp -r 314Website/public/* public_html/
