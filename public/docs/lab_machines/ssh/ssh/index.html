@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Connecting with SSH We will connect to the Lab Machines using a protocol called SSH (for Secure Shell). It will allow us to remotely access a machine&rsquo;s command line.
+Prerequisites  Make sure you know your CS account username and password Find an available CS machine to connect to with this link If off-campus, make sure you are connected to the VPN or have set up SSH keys  The SSH Command Firstly, you&rsquo;ll need to open your terminal application of choice.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Connecting with SSH" />
+<meta property="og:description" content="Connecting with SSH We will connect to the Lab Machines using a protocol called SSH (for Secure Shell). It will allow us to remotely access a machine&rsquo;s command line.
+Prerequisites  Make sure you know your CS account username and password Find an available CS machine to connect to with this link If off-campus, make sure you are connected to the VPN or have set up SSH keys  The SSH Command Firstly, you&rsquo;ll need to open your terminal application of choice." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/ssh/" />
+
+<title>Connecting with SSH | Sam&#39;s CS314 Site</title>
+<link rel="manifest" href="/~slaberge/manifest.json">
+<link rel="icon" href="/~slaberge/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/~slaberge/book.min.47499b1062a580086a31f74615b8797b5bafd0e9ea5c8a0abc577412d989bcdc.css" integrity="sha256-R0mbEGKlgAhqMfdGFbh5e1uv0OnqXIoKvFd0EtmJvNw=">
+<script defer src="/~slaberge/en.search.min.60ab69df0d00aea57682aefe30a6ae9caedf17957f50dc6ec84efee049d3de48.js" integrity="sha256-YKtp3w0ArqV2gq7&#43;MKaunK7fF5V/UNxuyE7&#43;4EnT3kg="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/~slaberge"><span>Sam&#39;s CS314 Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Topics</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/topics/amortized/" class="">Amortized Analysis</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/topics/amortized/dynamic_arrays/" class="">Dyanmic Arrays</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <a href="/~slaberge/docs/lab_machines/" class="">CS Lab Machines</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>Getting Connected</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/vpn/" class="">The UT VPN</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/ssh/" class="active">Connecting with SSH</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/keys/" class="">SSH Keys</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>Using the Lab Machines</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/sftp/transferring/" class="">Transferring Files</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/sftp/linux/" class="">Linux Basics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/sftp/java/" class="">Running Java Programs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/sftp/gui/" class="">Running GUI Programs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/~slaberge/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Connecting with SSH</strong>
+
+  <label for="toc-control">
+    <img src="/~slaberge/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#the-ssh-command">The SSH Command</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="connecting-with-ssh">Connecting with SSH</h1>
+<p>We will connect to the Lab Machines using a protocol called
+SSH (for <strong>S</strong>ecure <strong>Sh</strong>ell). It will allow us to remotely
+access a machine&rsquo;s command line.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Make sure you know your CS account username and password</li>
+<li>Find an available CS machine to connect to with <a href="https://apps.cs.utexas.edu/unixlabstatus/">this link</a></li>
+<li>If off-campus, make sure you are connected to the VPN or have set up SSH keys</li>
+</ul>
+<h2 id="the-ssh-command">The SSH Command</h2>
+<p>Firstly, you&rsquo;ll need to open your terminal application of
+choice. On macOS, the default pre-installed terminal is called
+<code>Terminal</code>. On Windows, the pre-installed <code>Command Prompt</code>
+will work, too.</p>
+<p>You should now have a blank prompt which looks something like
+this:</p>
+<p><img src="/~slaberge/ssh_images/Terminal0.png" alt="Empty Terminal" /></p>
+<p>Now, we can issue the SSH command to open a connection with
+one of the UTCS Lab machines:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh &lt;CS Username&gt;@&lt;Machine Name&gt;.cs.utexas.edu
+</code></pre></div><p>My username is <code>slaberge</code> and I am connecting to the
+<code>aggravation</code> machine. So the command I&rsquo;ll use looks like:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh slaberge@aggravation.cs.utexas.edu
+</code></pre></div><p><img src="/~slaberge/ssh_images/Terminal1.png" alt="SSH Command" /></p>
+<p>Press enter to issue the command. You will be asked to enter
+your CS account password. If you do not remember it, use
+<a href="https://www.cs.utexas.edu/faq/68688">this link</a>. If you set
+up SSH keys, you may be asked for your key&rsquo;s passphrase.</p>
+<blockquote class="book-hint ">
+  If you are on Windows and the <code>ssh</code> command could not be found,
+you may need to enable it. Try following
+<a href="https://ittutorials.net/microsoft/windows-10/enable-ssh-windows-10-command-prompt/">this tutorial</a>.
+</blockquote>
+
+<p><img src="/~slaberge/ssh_images/Terminal2.png" alt="Linux Prompt" /></p>
+<p>The prompt you see will most likely not look like the one above, but if you see the name of the machine you connected to in the prompt, then you successfully connected!</p>
+<p>If you got an error, first make sure you entered the command correctly.
+You can use the up arrow to fill in the prompt with the previous command in your history.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#the-ssh-command">The SSH Command</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

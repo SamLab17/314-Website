@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About this Site on Sam&#39;s CS314 Site</title>
+    <link>https://www.cs.utexas.edu/~slaberge/</link>
+    <description>Recent content in About this Site on Sam&#39;s CS314 Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 May 2020 19:31:31 -0500</lastBuildDate>
+    
+	<atom:link href="https://www.cs.utexas.edu/~slaberge/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dyanmic Arrays</title>
+      <link>https://www.cs.utexas.edu/~slaberge/docs/topics/amortized/dynamic_arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~slaberge/docs/topics/amortized/dynamic_arrays/</guid>
+      <description>Amortized Analysis of Dynamic Arrays The classic example of amortized analysis is appending to the end of a dynamic array. In Java, this would be the add() method as part of the ArrayList class. When we insert into a dynamic array there are two possible behaviors:
+ There is still room in the array and we can simply add the value into the array. There is no more room in the array so we need to make a new, larger array, copy over all the elements into the new array, and then finally add the new value.</description>
+    </item>
+    
+    <item>
+      <title>The UT VPN</title>
+      <link>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/vpn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/vpn/</guid>
+      <description>The UT VPN Using the UT VPN will make it appear as though you are connected to UT&amp;rsquo;s on-campus internet. This can be very useful even outside of CS. If you are trying to access the UT library, online academic journals, or other university resources, you may need to use the VPN when off campus.
+Here, we will need to use the VPN to allow us to connect to the CS Department&amp;rsquo;s Lab Machines.</description>
+    </item>
+    
+    <item>
+      <title>Transferring Files</title>
+      <link>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/sftp/transferring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/sftp/transferring/</guid>
+      <description>Transferring Files To transfer files to and from the CS department&amp;rsquo;s lab machines, we will use a file transfer protocol named SFTP (SSH File Transfer Protocol).
+On macOS and Linux, you can transfer files over SFTP using the scp command. However, the command can be quite cumbersome and having a GUI application makes transferring files much easier.
+Below are some graphical applications for all operating systems which support SFTP.
+Windows WinSCP This is a free and open-source SFTP client for Windows.</description>
+    </item>
+    
+    <item>
+      <title>Connecting with SSH</title>
+      <link>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/ssh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/ssh/</guid>
+      <description>Connecting with SSH We will connect to the Lab Machines using a protocol called SSH (for Secure Shell). It will allow us to remotely access a machine&amp;rsquo;s command line.
+Prerequisites  Make sure you know your CS account username and password Find an available CS machine to connect to with this link If off-campus, make sure you are connected to the VPN or have set up SSH keys  The SSH Command Firstly, you&amp;rsquo;ll need to open your terminal application of choice.</description>
+    </item>
+    
+    <item>
+      <title>Linux Basics</title>
+      <link>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/sftp/linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/sftp/linux/</guid>
+      <description>Linux Basics You are about to see a lot of potentially unfamiliar commands below. Don&amp;rsquo;t worry about memorizing all of these right away .
+The only way of getting familiar with these commands is by using them. So if that means you need to look up a Linux cheat-sheet every time or you print out a list of these on your desk, that&amp;rsquo;s perfectly normal.
+Some of these commands have strange, un-intuitive names which still cause the most experienced Linux users to forget or confuse them.</description>
+    </item>
+    
+    <item>
+      <title>Running Java Programs</title>
+      <link>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/sftp/java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/sftp/java/</guid>
+      <description>Running Java Programs on Lab Machines Transferring your Program to the Lab Machines Firstly, transfer all the required .java and input files to the lab machines using an SFTP application of your choice. Put all of these files together in the same directory. I&amp;rsquo;d recommend making a directory just for these files because once we compile your program, it may generate a lot of .class files, and we wouldn&amp;rsquo;t want to clutter up another directory.</description>
+    </item>
+    
+    <item>
+      <title>SSH Keys</title>
+      <link>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/keys/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/keys/</guid>
+      <description>SSH Keys Setting up SSH Keys will allow us to connect to the lab machines from off-campus without needing to use the VPN.
+SSH Keys are also a more secure form of authentication than just passwords. So, if you ever set up a server which is accessible over the internet (say, for a website) in the future, make sure to use SSH Keys for authentication.  Prerequisites  Make sure you can connect to a lab machine over SSH.</description>
+    </item>
+    
+    <item>
+      <title>Running GUI Programs</title>
+      <link>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/sftp/gui/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/sftp/gui/</guid>
+      <description>Running Graphical Programs Over SSH Although SSH connections are done through a command line interface, it is actually possible to run graphical applications over SSH using X-forwarding.
+This trick can be useful for CS314 because some of our assignments use a GUI window. If you want to test one of these graphical programs on the lab machines, you&amp;rsquo;ll need to use X-forwarding. If you do not have X-forwarding enabled, you&amp;rsquo;ll get an exception which looks similar to this:</description>
+    </item>
+    
+  </channel>
+</rss>

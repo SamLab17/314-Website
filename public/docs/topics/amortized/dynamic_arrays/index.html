@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Amortized Analysis of Dynamic Arrays The classic example of amortized analysis is appending to the end of a dynamic array. In Java, this would be the add() method as part of the ArrayList class. When we insert into a dynamic array there are two possible behaviors:
+ There is still room in the array and we can simply add the value into the array. There is no more room in the array so we need to make a new, larger array, copy over all the elements into the new array, and then finally add the new value.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Dyanmic Arrays" />
+<meta property="og:description" content="Amortized Analysis of Dynamic Arrays The classic example of amortized analysis is appending to the end of a dynamic array. In Java, this would be the add() method as part of the ArrayList class. When we insert into a dynamic array there are two possible behaviors:
+ There is still room in the array and we can simply add the value into the array. There is no more room in the array so we need to make a new, larger array, copy over all the elements into the new array, and then finally add the new value." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.cs.utexas.edu/~slaberge/docs/topics/amortized/dynamic_arrays/" />
+
+<title>Dyanmic Arrays | Sam&#39;s CS314 Site</title>
+<link rel="manifest" href="/~slaberge/manifest.json">
+<link rel="icon" href="/~slaberge/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/~slaberge/book.min.47499b1062a580086a31f74615b8797b5bafd0e9ea5c8a0abc577412d989bcdc.css" integrity="sha256-R0mbEGKlgAhqMfdGFbh5e1uv0OnqXIoKvFd0EtmJvNw=">
+<script defer src="/~slaberge/en.search.min.60ab69df0d00aea57682aefe30a6ae9caedf17957f50dc6ec84efee049d3de48.js" integrity="sha256-YKtp3w0ArqV2gq7&#43;MKaunK7fF5V/UNxuyE7&#43;4EnT3kg="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/~slaberge"><span>Sam&#39;s CS314 Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Topics</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/topics/amortized/" class="">Amortized Analysis</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/topics/amortized/dynamic_arrays/" class="active">Dyanmic Arrays</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <a href="/~slaberge/docs/lab_machines/" class="">CS Lab Machines</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>Getting Connected</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/vpn/" class="">The UT VPN</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/ssh/" class="">Connecting with SSH</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/keys/" class="">SSH Keys</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>Using the Lab Machines</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/sftp/transferring/" class="">Transferring Files</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/sftp/linux/" class="">Linux Basics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/sftp/java/" class="">Running Java Programs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/sftp/gui/" class="">Running GUI Programs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/~slaberge/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Dyanmic Arrays</strong>
+
+  <label for="toc-control">
+    <img src="/~slaberge/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#increase-by-a-constant--k-">Increase by a Constant \( k \)</a></li>
+    <li><a href="#increase-by-a-constant-factor-k">Increase by a Constant Factor \(k\)</a>
+      <ul>
+        <li><a href="#doubling-the-size-k--2">Doubling the Size (\(k = 2\))</a></li>
+        <li><a href="#generalized-to-any-factor--k--1">Generalized to Any Factor \( (k &gt; 1)\)</a></li>
+      </ul>
+    </li>
+    <li><a href="#conculsion">Conculsion</a></li>
+    <li><a href="#footnotes">Footnotes</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="amortized-analysis-of-dynamic-arrays">Amortized Analysis of Dynamic Arrays</h1>
+<p>The classic example of amortized analysis is appending to the end of a dynamic
+array. In Java, this would be the <code>add()</code> method as part of the <code>ArrayList</code>
+class. When we insert into a dynamic array there are two possible behaviors:</p>
+<ul>
+<li>There is still room in the array and we can simply add the value into the array.</li>
+<li>There is no more room in the array so we need to make a new, larger array, copy
+over all the elements into the new array, and then finally add the new value.</li>
+</ul>
+<p>The first situation is \(O(1)\) whereas the second is \(O(N)\) (where \(N\)
+is the number of elements in the <code>ArrayList</code><sup>1</sup>). The average, or amortized order
+of appending to a dynamic array will depend on how often we have to resize. When
+we resize, we have two options for large to make the new internal array:</p>
+<ul>
+<li>We could increase the size of the internal array by a constant \(k\)</li>
+<li>We could increase the size of the internal array by a constant <strong>factor</strong> \(k\)</li>
+</ul>
+<p>Let&rsquo;s do an amortized analysis for both cases. We will add \( N + 1 \) elements
+to the lists (it makes the math a bit nicer than adding \( N \)).
+For both cases we assume \(N \gg k \).</p>
+<h2 id="increase-by-a-constant--k-">Increase by a Constant \( k \)</h2>
+<p>Suppose we start with an array of size \( k \). Once we try to add the \(k + 1^{th}\)
+element to the list, we will need to resize. In this case we will add another \( k \)
+spots to our internal array, creating a new array of size \(2k\) and copy our \(k\)
+elements over into the new array. When we try to add the \(2k + 1^{th}\) element,
+we&rsquo;ll resize again and copy over \(2k\) elements.</p>
+<p>Let&rsquo;s add up how many copies we&rsquo;ll need to make in the process of adding \(N+1\)
+elements to the array. In the very worst case, we&rsquo;ll need to copy over a maximum
+of \(N\) elements before we can add the \(N + 1^{th}\) element; let&rsquo;s assume
+that worst case:</p>
+<p>\[
+\text{Number of copies} = k + 2k + 3k + &hellip; + N = k \left ( 1 + 2 + 3 + &hellip; + \frac{N}{k} \right )
+\]</p>
+<p>By factoring out the \(k\), we can evaluate the sum on the right hand side:</p>
+<p>\[
+k \left( 1 + 2 + 3 + &hellip; + \frac{N}{k} \right ) = k \left ( \frac{(\frac{N}{k})(\frac{N}{k} + 1)}{2} \right ) \approx O(N^2)
+\]</p>
+<p>Thus, the process of copying over all of the elements while resizing takes
+\(O(N^2)\) time. Dividing this by the \(N + 1\) insertions, the amortized cost
+for each call to <code>add()</code> would be:</p>
+<p>\[
+\frac{O(N^2)}{N+1} \approx O(N)
+\]</p>
+<h2 id="increase-by-a-constant-factor-k">Increase by a Constant Factor \(k\)</h2>
+<p>If we increase the size by a constant factor, we say that the length of the
+internal array grows geometrically (as in a geometric series).
+For simplicity, let&rsquo;s first consider the case where \(k = 2 \), then we can
+look at the more general case (although both will have the same conclusion).</p>
+<h3 id="doubling-the-size-k--2">Doubling the Size (\(k = 2\))</h3>
+<p>Suppose we started with an internal array of size 1 (really ridiculous, I know, but it makes
+the math more apparent). Once we try to add the second element to the list, we&rsquo;ll need
+to resize our array to a size of 2 and copy our one element over. When we try to add the third
+element, our array will grow to a size of 4 and we&rsquo;ll copy over the 2 elements from
+before. etc. Let&rsquo;s again look at how many elements we&rsquo;ll need to copy over during the
+course of adding \(N + 1\) elements:</p>
+<p>\[
+1 + 2 + 4 + &hellip; + N = 2N - 1 \approx O(N)
+\]</p>
+<blockquote class="book-hint ">
+  Had we started with an array of size \( &gt; 1 \), we could just factor it out in
+the sum above and get the same answer.
+</blockquote>
+
+<p>Thus, the copying over of elements when we resize only takes \( O(N)\) time.
+Dividing this by the \(N+1\) insertions, the amortized cost for each call to
+<code>add()</code> would be:</p>
+<p>\[
+\frac{O(N)}{N+1} \approx O(1)
+\]</p>
+<h3 id="generalized-to-any-factor--k--1">Generalized to Any Factor \( (k &gt; 1)\)</h3>
+<p>If we generalize to any factor \(k\), the logic from above stays about the same.
+However, the sum will change:</p>
+<p>\[
+k^0 + k^1 + k^2 + &hellip; + N = \sum_{i=0}^{\log_{k}{N}}{k^i}
+\]</p>
+<p>This is a geometric sum and the formula for a partial geometric sum is:</p>
+<p>\[
+\sum_{i=0}^{\log_{k}{N}}{k^i} = \frac{k^{\log_k{N}+1}-1}{k-1} =
+\frac{k^{\log_k{N}}k + 1}{k-1} = \frac{Nk + 1}{k-1} \approx O(N)
+\]</p>
+<p>Thus, resizing by any factor \(k\) also results in \(O(N)\) time for resizing.</p>
+<h2 id="conculsion">Conculsion</h2>
+<p>The Big O of adding to the end of a dynamic array, <code>ArrayList</code> in Java, depends
+on the resize behavior. If we simply add a constant \(k\) to the size every time,
+then adding to the end of the array is on average \(O(N)\). If we increase the size
+by a factor (we multiply the size), adding to then end is on average \(O(1)\).</p>
+<h2 id="footnotes">Footnotes</h2>
+<p><sup>1</sup> In Java, \(N\) would actually be the size of the new array container
+because Java will initialize all elements in the array to <code>null</code>. However, in other
+languages this initialization is not done and it will be simpler to use this
+definition of \(N\) when doing the amortized analysis.</p>
+
+<link rel="stylesheet" href="/~slaberge/katex/katex.min.css" />
+<script defer src="/~slaberge/katex/katex.min.js"></script>
+<script defer src="/~slaberge/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+  \(\)
+</span>
+
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#increase-by-a-constant--k-">Increase by a Constant \( k \)</a></li>
+    <li><a href="#increase-by-a-constant-factor-k">Increase by a Constant Factor \(k\)</a>
+      <ul>
+        <li><a href="#doubling-the-size-k--2">Doubling the Size (\(k = 2\))</a></li>
+        <li><a href="#generalized-to-any-factor--k--1">Generalized to Any Factor \( (k &gt; 1)\)</a></li>
+      </ul>
+    </li>
+    <li><a href="#conculsion">Conculsion</a></li>
+    <li><a href="#footnotes">Footnotes</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

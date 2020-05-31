@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SSH Keys Setting up SSH Keys will allow us to connect to the lab machines from off-campus without needing to use the VPN.
+SSH Keys are also a more secure form of authentication than just passwords. So, if you ever set up a server which is accessible over the internet (say, for a website) in the future, make sure to use SSH Keys for authentication.  Prerequisites  Make sure you can connect to a lab machine over SSH.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="SSH Keys" />
+<meta property="og:description" content="SSH Keys Setting up SSH Keys will allow us to connect to the lab machines from off-campus without needing to use the VPN.
+SSH Keys are also a more secure form of authentication than just passwords. So, if you ever set up a server which is accessible over the internet (say, for a website) in the future, make sure to use SSH Keys for authentication.  Prerequisites  Make sure you can connect to a lab machine over SSH." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/keys/" />
+
+<title>SSH Keys | Sam&#39;s CS314 Site</title>
+<link rel="manifest" href="/~slaberge/manifest.json">
+<link rel="icon" href="/~slaberge/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/~slaberge/book.min.47499b1062a580086a31f74615b8797b5bafd0e9ea5c8a0abc577412d989bcdc.css" integrity="sha256-R0mbEGKlgAhqMfdGFbh5e1uv0OnqXIoKvFd0EtmJvNw=">
+<script defer src="/~slaberge/en.search.min.60ab69df0d00aea57682aefe30a6ae9caedf17957f50dc6ec84efee049d3de48.js" integrity="sha256-YKtp3w0ArqV2gq7&#43;MKaunK7fF5V/UNxuyE7&#43;4EnT3kg="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/~slaberge"><span>Sam&#39;s CS314 Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Topics</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/topics/amortized/" class="">Amortized Analysis</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/topics/amortized/dynamic_arrays/" class="">Dyanmic Arrays</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <a href="/~slaberge/docs/lab_machines/" class="">CS Lab Machines</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>Getting Connected</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/vpn/" class="">The UT VPN</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/ssh/" class="">Connecting with SSH</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/keys/" class="active">SSH Keys</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>Using the Lab Machines</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/sftp/transferring/" class="">Transferring Files</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/sftp/linux/" class="">Linux Basics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/sftp/java/" class="">Running Java Programs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/sftp/gui/" class="">Running GUI Programs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/~slaberge/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>SSH Keys</strong>
+
+  <label for="toc-control">
+    <img src="/~slaberge/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#creating-a-key-pair">Creating a Key Pair</a></li>
+    <li><a href="#sending-your-key-to-the-lab-machine">Sending your key to the Lab Machine</a></li>
+    <li><a href="#sources">Sources</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="ssh-keys">SSH Keys</h1>
+<p>Setting up SSH Keys will allow us to connect to the lab machines
+from off-campus without needing to use the VPN.</p>
+<blockquote class="book-hint ">
+  SSH Keys are also a more secure form of authentication than just
+passwords. So, if you ever set up a server which is accessible over
+the internet (say, for a website) in the future, make sure to use
+SSH Keys for authentication.
+</blockquote>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Make sure you can connect to a lab machine over SSH. This
+may require using the UT VPN if off-campus.</li>
+</ul>
+<h2 id="creating-a-key-pair">Creating a Key Pair</h2>
+<p>First, we need to create a public/private key pair on our local
+machine. The public key will be sent to the lab machine whereas the
+private key should remain on your personal computer and never be
+shared with anyone.</p>
+<p>To create a key, run the following command in your terminal
+or command prompt:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh-keygen -t rsa -b <span style="color:#ae81ff">4096</span>
+</code></pre></div><p>You will then be prompted to choose a location to store the
+keys. It is recommended to use the default location, so just
+press Enter without entering anything at the prompt.</p>
+<p>You will then be prompted to enter a passphrase for this key.
+The CS Department strongly recommends using a passphrase
+alongside your keys, although it is not necessary. If you
+choose to enter a passphrase, you will be prompted to enter it
+anytime you log into the lab machines from off campus. If you
+do not want to use a passphrase, press Enter without entering
+one.</p>
+<p>You will then be prompted to confirm your passphrase.</p>
+<p>The output should look similar to below.</p>
+<p><img src="Images/SSHKey.png" alt="SSH Key output" /></p>
+<p>By default, the public key is stored in a file called <code>id_rsa.pub</code>.
+On macOS/Linux this file is in the hidden directory called <code>.ssh</code> in
+your home directory. On Windows it is located in
+<code>C:\Users\&lt;YOUR_USERNAME&gt;\.ssh\</code> by default.</p>
+<p>The private key is stored in the same directory but named <code>id_rsa</code>.
+<strong>This file should never be moved off of your computer or
+shared with anyone.</strong></p>
+<h2 id="sending-your-key-to-the-lab-machine">Sending your key to the Lab Machine</h2>
+<p>Now, we need to send a copy of our public key to a lab machine
+Once your key has been copied to one lab machine, it can be used to log in to <em>any other</em> lab machine.
+Follow the instructions for your operating system:</p>
+
+
+
+
+<div class="book-tabs"><input type="radio" class="hidden" name="tabs-key-transfer-tabs" id="tabs-key-transfer-tabs-0" checked="checked" />
+  <label for="tabs-key-transfer-tabs-0">macOS/Linux</label>
+  <div class="book-tabs-content markdown-inner"><p>Type the following command into your terminal. Be sure to replace
+<code>CS_USER</code> with your CS username.</p>
+<pre><code>ssh-copy-id CS_USER@linux.cs.utexas.edu
+</code></pre><p>If prompted &ldquo;Are you sure you want to continue connecting?&rdquo; type
+<code>yes</code> and press Enter. You may need to enter your CS password.</p>
+</div><input type="radio" class="hidden" name="tabs-key-transfer-tabs" id="tabs-key-transfer-tabs-1"  />
+  <label for="tabs-key-transfer-tabs-1">Windows</label>
+  <div class="book-tabs-content markdown-inner"><p>Type the following command into your command prompt. Be sure to
+replace <code>CS_USER</code> with your CS username.</p>
+<pre><code> type .ssh\id_rsa.pub | ssh CS_USER@linux.cs.utexas.edu &quot;umask 0077 &amp;&amp; mkdir -p ~/.ssh &amp;&amp; cat &gt;&gt; ~/.ssh/authorized_keys&quot;
+</code></pre><p>If prompted &ldquo;Are you sure you want to continue connecting?&rdquo; type
+<code>yes</code> and press Enter. You may need to enter your CS password.</p>
+</div></div>
+
+<p>If everything was done successfully, you should now be able to log
+into the lab machines from off-campus (without using the VPN)!</p>
+<h2 id="sources">Sources</h2>
+<p>This guide is based on UTCS&rsquo;s guide found <a href="https://www.cs.utexas.edu/ssh-keys">here</a>.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#creating-a-key-pair">Creating a Key Pair</a></li>
+    <li><a href="#sending-your-key-to-the-lab-machine">Sending your key to the Lab Machine</a></li>
+    <li><a href="#sources">Sources</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

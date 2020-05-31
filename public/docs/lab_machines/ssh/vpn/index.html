@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The UT VPN Using the UT VPN will make it appear as though you are connected to UT&rsquo;s on-campus internet. This can be very useful even outside of CS. If you are trying to access the UT library, online academic journals, or other university resources, you may need to use the VPN when off campus.
+Here, we will need to use the VPN to allow us to connect to the CS Department&rsquo;s Lab Machines.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="The UT VPN" />
+<meta property="og:description" content="The UT VPN Using the UT VPN will make it appear as though you are connected to UT&rsquo;s on-campus internet. This can be very useful even outside of CS. If you are trying to access the UT library, online academic journals, or other university resources, you may need to use the VPN when off campus.
+Here, we will need to use the VPN to allow us to connect to the CS Department&rsquo;s Lab Machines." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/vpn/" />
+
+<title>The UT VPN | Sam&#39;s CS314 Site</title>
+<link rel="manifest" href="/~slaberge/manifest.json">
+<link rel="icon" href="/~slaberge/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/~slaberge/book.min.47499b1062a580086a31f74615b8797b5bafd0e9ea5c8a0abc577412d989bcdc.css" integrity="sha256-R0mbEGKlgAhqMfdGFbh5e1uv0OnqXIoKvFd0EtmJvNw=">
+<script defer src="/~slaberge/en.search.min.60ab69df0d00aea57682aefe30a6ae9caedf17957f50dc6ec84efee049d3de48.js" integrity="sha256-YKtp3w0ArqV2gq7&#43;MKaunK7fF5V/UNxuyE7&#43;4EnT3kg="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/~slaberge"><span>Sam&#39;s CS314 Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Topics</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/topics/amortized/" class="">Amortized Analysis</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/topics/amortized/dynamic_arrays/" class="">Dyanmic Arrays</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <a href="/~slaberge/docs/lab_machines/" class="">CS Lab Machines</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>Getting Connected</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/vpn/" class="active">The UT VPN</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/ssh/" class="">Connecting with SSH</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/keys/" class="">SSH Keys</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>Using the Lab Machines</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/sftp/transferring/" class="">Transferring Files</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/sftp/linux/" class="">Linux Basics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/sftp/java/" class="">Running Java Programs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/sftp/gui/" class="">Running GUI Programs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/~slaberge/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>The UT VPN</strong>
+
+  <label for="toc-control">
+    <img src="/~slaberge/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#foreword-on-vpns">Foreword on VPNs</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#setting-up-the-vpn">Setting up the VPN</a>
+      <ul>
+        <li><a href="#downloading-the-vpn-software">Downloading the VPN Software</a></li>
+        <li><a href="#connecting-to-the-vpn">Connecting to the VPN</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="the-ut-vpn">The UT VPN</h1>
+<p>Using the UT VPN will make it appear as though you are
+connected to UT&rsquo;s on-campus internet.  This can be very useful
+even outside of CS. If you are trying to access the UT
+library, online academic journals, or other university
+resources, you may need to use the VPN when off campus.</p>
+<p>Here, we will need to use the VPN to allow us to connect to
+the CS Department&rsquo;s Lab Machines.</p>
+<h2 id="foreword-on-vpns">Foreword on VPNs</h2>
+<p>When you connect to a VPN, all of your Internet traffic will
+be routed through that VPN service. This is true of all VPN
+services, including UT&rsquo;s. Although I doubt UT has any
+nefarious intents, realize that VPN services could get a lot
+of information on you based on your internet activity.</p>
+<p><strong>Therefore, as a general security principle, only use a VPN
+when you absolutely have to.</strong> In the case of UT&rsquo;s VPN, you
+should only use it while you are connected to a CS machine,
+trying to access library documents, etc. Disconnect from the
+VPN when you are done.</p>
+<p>In the case of the CS lab machines, only use the VPN to set up
+your SSH keys, and then you will not have to connect to the
+VPN afterwards to connect to the lab machines.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Make sure you have DUO two-factor authentication set up. You
+can do this by following
+<a href="https://wikis.utexas.edu/display/comm/Duo&#43;-&#43;Two&#43;Factor&#43;-&#43;&#43;Authentication&#43;-&#43;Mobile&#43;Phone&#43;-&#43;How&#43;to&#43;Authenticate&#43;Your&#43;Cell&#43;Phone">this guide</a>.</li>
+</ul>
+<h2 id="setting-up-the-vpn">Setting up the VPN</h2>
+<p>These steps should be the same for Windows, Mac, and Linux.</p>
+<h3 id="downloading-the-vpn-software">Downloading the VPN Software</h3>
+<p>Visit <a href="https://vpn.utexas.edu/">vpn.utexas.edu</a> and log in
+using your UT EID.</p>
+<p><img src="/~slaberge/ssh_images/vpnutexas.png" alt="UTexas VPN website" /></p>
+<p>It will then ask you to authenticate using DUO. Choose an
+authentication method to proceed.</p>
+<p><img src="/~slaberge/ssh_images/vpnduo.png" alt="VPN Duo Authentication" /></p>
+<p>You will then need to install a piece of software by Cisco
+which will set up the VPN on your device.</p>
+<p><img src="/~slaberge/ssh_images/ciscoinstall.png" alt="Cisco Application download page" /></p>
+<p>Click on the &ldquo;Instructions&rdquo; button if you would like
+instructions on how to install the software.</p>
+<h3 id="connecting-to-the-vpn">Connecting to the VPN</h3>
+<p>Once you are finished installing, open the &ldquo;Cisco AnyConnect
+Secure Mobility Client&rdquo;. You should see the following window.</p>
+<p><img src="/~slaberge/ssh_images/firstwindow.png" alt="First window shown by Cisco App" /></p>
+<p>Type <code>vpn.utexas.edu</code> in the field and click connect.</p>
+<p><img src="/~slaberge/ssh_images/filledwindow.png" alt="First window with completed field" /></p>
+<p>You will then be shown an authentication window.</p>
+<p>In the Username field, enter your UT EID.</p>
+<p>In the Password field enter the password associated with your
+UT EID.</p>
+<p>In the last field, Duo passcode, you can enter any of the
+following options:</p>
+<ol>
+<li><code>push</code> - This will send a push notification to your authorized DUO device.</li>
+<li><code>sms</code> - This will send an SMS message to your DUO-authorized phone number.</li>
+<li><code>phone</code> - This will call your DUO-authorized phone number.</li>
+</ol>
+<p><img src="/~slaberge/ssh_images/authenticationwindow.png" alt="Authentication window" /></p>
+<p>Click Ok and then, with your selected authentication method,
+provide two-factor authentication to connect.</p>
+<p>If everything was successful, you should see a message
+indicating you successfully connected to the VPN!</p>
+<p><img src="/~slaberge/ssh_images/connected.png" alt="Successfully Connected Message" /></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#foreword-on-vpns">Foreword on VPNs</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#setting-up-the-vpn">Setting up the VPN</a>
+      <ul>
+        <li><a href="#downloading-the-vpn-software">Downloading the VPN Software</a></li>
+        <li><a href="#connecting-to-the-vpn">Connecting to the VPN</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,8 +2,6 @@
 title: "Amortized Analysis"
 date: 2020-05-16T19:31:31-05:00
 draft: false
-mykatex: true
-weight: 10
 ---
 
 
@@ -16,7 +14,7 @@ longer. Should we describe that function's Big O based on the common runtime
 complexity or the longer, rarer runtime? Or should both contribute to our
 description of the function's runtime?
 
-This is the motivation for _amortized analyis_, which essentially describes
+This is the motivation for _amortized analysis_, which essentially describes
 the "average" runtime for the function after it is executed some number of times.
 We can define amortized cost in the same way we think about averages: the sum
 of the costs for each time we execute the function divided by the number of times
