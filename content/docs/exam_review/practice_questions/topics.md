@@ -1,14 +1,16 @@
 ---
 title: Problems by Topic
+description: "Programming problems sorted by the topic they cover"
+weight: 10
 ---
 
 # Programming Problems by Topic
 
 ## Array-based Lists
 
-[Remove Odd Indices](/~slaberge/problem_pages/remove_odd_indices)
-
 [Insert All Front](/~slaberge/problem_pages/insert_all_front)
+
+[Remove Odd Indices](/~slaberge/problem_pages/remove_odd_indices)
 
 [Sorted List Insert](/~slaberge/problem_pages/sorted_list_insert)
 
