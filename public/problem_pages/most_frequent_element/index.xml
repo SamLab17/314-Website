@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Most Frequent Element on Sam&#39;s CS314 Site</title>
+    <link>https://www.cs.utexas.edu/~slaberge/problem_pages/most_frequent_element/</link>
+    <description>Recent content in Most Frequent Element on Sam&#39;s CS314 Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://www.cs.utexas.edu/~slaberge/problem_pages/most_frequent_element/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

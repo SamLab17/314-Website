@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Verify Binary Search Tree Difficulty: Hard
+Problem Link
+Solution Link">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Verify BST" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.cs.utexas.edu/~slaberge/problem_pages/verify_bst/" />
+
+<title>Verify BST | Sam&#39;s CS314 Site</title>
+<link rel="manifest" href="/~slaberge/manifest.json">
+<link rel="icon" href="/~slaberge/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/~slaberge/book.min.47499b1062a580086a31f74615b8797b5bafd0e9ea5c8a0abc577412d989bcdc.css" integrity="sha256-R0mbEGKlgAhqMfdGFbh5e1uv0OnqXIoKvFd0EtmJvNw=">
+<script defer src="/~slaberge/en.search.min.0c2644028f48da3db08b2e3d1dad5708c1da25bf5ea70c509dff5181f6889fab.js" integrity="sha256-DCZEAo9I2j2wiy49Ha1XCMHaJb9epwxQnf9RgfaIn6s="></script>
+<link rel="alternate" type="application/rss+xml" href="https://www.cs.utexas.edu/~slaberge/problem_pages/verify_bst/index.xml" title="Sam's CS314 Site" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/~slaberge"><span>Sam&#39;s CS314 Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Topics</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/topics/amortized/" class="">Amortized Analysis</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/topics/amortized/dynamic_arrays/" class="">Dynamic Arrays</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <a href="/~slaberge/docs/lab_machines/" class="">CS Lab Machines</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>Getting Connected</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/vpn/" class="">The UT VPN</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/ssh/" class="">Connecting with SSH</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/keys/" class="">SSH Keys</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>Using the Lab Machines</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/tutorials/transferring/" class="">Transferring Files</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/tutorials/linux/" class="">Linux Basics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/tutorials/java/" class="">Running Java Programs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/tutorials/gui/" class="">Running GUI Programs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Exam Review</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>Programming Problems</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/exam_review/practice_questions/topics/" class="">Problems by Topic</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/~slaberge/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Verify BST</strong>
+
+  <label for="toc-control">
+    <img src="/~slaberge/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents"></nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="verify-binary-search-tree">Verify Binary Search Tree</h1>
+<p>Difficulty: Hard</p>
+<p><a href="VerifyBST.pdf">Problem Link</a></p>
+<p><a href="VerifyBSTSolution.pdf">Solution Link</a></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents"></nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+\documentclass[12pt,letter]{article}
+
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+\noindent\textsc{\large CS 314 Exam One Review--- Remove Odd Indices}
+
+\vspace{6pt}
+\noindent\textbf{Array-based Lists}
+
+\vspace{2pt}
+\noindent Implement an instance method for the \texttt{GenericList} class which will 
+remove all elements at odd indices. This method will then return the number of elements
+removed from the list. None of the elements in the list will be \texttt{null}.
+
+\vspace{4pt}
+\noindent Complete the following method.
+\begin{verbatim}
+  // Removes all elements at odd indices
+  // pre: none
+  // post: returns number of elements removed from list
+  public int removeOddIndices()
+\end{verbatim}
+
+\vspace{4pt}
+
+\noindent Here are some example calls to \texttt{removeOddIndices()}:
+\newline
+\noindent \texttt{[0, 1, 2, 3, 4, 5].removeOddIndices()}$ \rightarrow $ \texttt{[0, 2, 4]}, returns 3
+\newline
+\noindent \texttt{["A", "B", "C", "D", "E"].removeOddIndices()} $ \rightarrow $ \texttt{["B", "D"]}, returns 3
+\newline
+\noindent \texttt{[314].removeOddIndices()} $\rightarrow$ \texttt{[314]}, returns 0
+\newline
+\noindent \texttt{[].removeOddIndices()} $\rightarrow$ \texttt{[]}, returns 0
+\newline
+
+\noindent Your method will be in the following \texttt{GenericList} class:
+
+\begin{verbatim}
+  public class GenericList<E>{
+    private int size;
+    private E[] con;
+    // ...
+  }
+
+\end{verbatim}
+
+\noindent \textbf{Do not use or assume there are any provided methods in the GenericList class.}
+
+\noindent \textbf{Do not use any other Java classes or methods.}
+
+\clearpage
+\begin{verbatim}
+  // Removes all elements at odd indices
+  // pre: none
+  // post: returns number of elements removed from list
+  public int removeOddIndices() {
+\end{verbatim}
+\end{document}

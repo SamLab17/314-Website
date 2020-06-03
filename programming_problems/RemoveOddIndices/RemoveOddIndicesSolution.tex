@@ -1,0 +1,86 @@
+\documentclass[12pt,letter]{article}
+
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+\noindent\textsc{\large CS 314 Exam One Review --- Remove Odd Indices}
+
+\vspace{6pt}
+\noindent\textbf{Array-based Lists}
+
+\vspace{2pt}
+\noindent Implement an instance method for the \texttt{GenericList} class which will 
+remove all elements at odd indices. This method will then return the number of elements
+removed from the list. None of the elements in the list will be \texttt{null}.
+
+\vspace{4pt}
+\noindent Complete the following method.
+\begin{verbatim}
+  // Removes all elements at odd indices
+  // pre: none
+  // post: returns number of elements removed from list
+  public int removeOddIndices()
+\end{verbatim}
+
+\vspace{4pt}
+
+\noindent Here are some example calls to \texttt{removeOddIndices()}:
+\newline
+\noindent \texttt{[0, 1, 2, 3, 4, 5].removeOddIndices()}$ \rightarrow $ \texttt{[0, 2, 4]}, returns 3
+\newline
+\noindent \texttt{["A", "B", "C", "D", "E"].removeOddIndices()} $ \rightarrow $ \texttt{["B", "D"]}, returns 3
+\newline
+\noindent \texttt{[314].removeOddIndices()} $\rightarrow$ \texttt{[314]}, returns 0
+\newline
+\noindent \texttt{[].removeOddIndices()} $\rightarrow$ \texttt{[]}, returns 0
+\newline
+
+\noindent Your method will be in the following \texttt{GenericList} class:
+
+\begin{verbatim}
+  public class GenericList<E>{
+    private int size;
+    private E[] con;
+    // ...
+  }
+
+\end{verbatim}
+
+\noindent \textbf{Do not use or assume there are any provided methods in the GenericList class.}
+
+\noindent \textbf{Do not use any other Java classes or methods.}
+
+\clearpage
+\begin{verbatim}
+  // Removes all elements at odd indices
+  // pre: none
+  // post: returns number of elements removed from list
+  public int removeOddIndices() {
+      int numToRemove = size / 2;
+      if(numToRemove == 0)
+          return 0;
+
+      int indexToReplace = 1;
+      //Loop through elements we want to keep
+      for(int i = 2; i < size; i += 2){
+          con[indexToReplace] = con[i];
+          indexToReplace++;
+      }
+      //Null out elements past new size
+      int newSize = size - numToRemove;
+      for(int i = newSize; i < size; i++){
+          con[i] = null;
+      }
+
+      //Set size variable
+      size = newSize;
+      return numToRemove;
+  } 
+\end{verbatim}
+
+This is a relatively simple problem about removing elements from an array based list. However, when dealing 
+with array based lists there are a lot of details which can be easy to forget. For instance, it is important
+to update the size instance variable and to null out the elements past the new size of the list to prevent memory
+leaks.
+
+\end{document}

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Running Graphical Programs Over SSH Although SSH connections are done through a command line interface, it is actually possible to run graphical applications over SSH using X-forwarding.
+This trick can be useful for CS314 because some of our assignments use a GUI window. If you want to test one of these graphical programs on the lab machines, you&rsquo;ll need to use X-forwarding. If you do not have X-forwarding enabled, you&rsquo;ll get an exception which looks similar to this:">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Running GUI Programs" />
+<meta property="og:description" content="Running Graphical Programs Over SSH Although SSH connections are done through a command line interface, it is actually possible to run graphical applications over SSH using X-forwarding.
+This trick can be useful for CS314 because some of our assignments use a GUI window. If you want to test one of these graphical programs on the lab machines, you&rsquo;ll need to use X-forwarding. If you do not have X-forwarding enabled, you&rsquo;ll get an exception which looks similar to this:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.cs.utexas.edu/~slaberge/docs/lab_machines/tutorials/gui/" />
+
+<title>Running GUI Programs | Sam&#39;s CS314 Site</title>
+<link rel="manifest" href="/~slaberge/manifest.json">
+<link rel="icon" href="/~slaberge/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/~slaberge/book.min.47499b1062a580086a31f74615b8797b5bafd0e9ea5c8a0abc577412d989bcdc.css" integrity="sha256-R0mbEGKlgAhqMfdGFbh5e1uv0OnqXIoKvFd0EtmJvNw=">
+<script defer src="/~slaberge/en.search.min.0c2644028f48da3db08b2e3d1dad5708c1da25bf5ea70c509dff5181f6889fab.js" integrity="sha256-DCZEAo9I2j2wiy49Ha1XCMHaJb9epwxQnf9RgfaIn6s="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/~slaberge"><span>Sam&#39;s CS314 Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Topics</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/topics/amortized/" class="">Amortized Analysis</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/topics/amortized/dynamic_arrays/" class="">Dynamic Arrays</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <a href="/~slaberge/docs/lab_machines/" class="">CS Lab Machines</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>Getting Connected</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/vpn/" class="">The UT VPN</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/ssh/" class="">Connecting with SSH</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/keys/" class="">SSH Keys</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>Using the Lab Machines</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/tutorials/transferring/" class="">Transferring Files</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/tutorials/linux/" class="">Linux Basics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/tutorials/java/" class="">Running Java Programs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/tutorials/gui/" class="active">Running GUI Programs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Exam Review</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>Programming Problems</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/exam_review/practice_questions/topics/" class="">Problems by Topic</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/~slaberge/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Running GUI Programs</strong>
+
+  <label for="toc-control">
+    <img src="/~slaberge/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents"></nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="running-graphical-programs-over-ssh">Running Graphical Programs Over SSH</h1>
+<p>Although SSH connections are done through a command line interface,
+it is actually possible to run graphical applications over
+SSH using X-forwarding.</p>
+<p>This trick can be useful for CS314 because some of our assignments
+use a GUI window. If you want to test one of these graphical
+programs on the lab machines, you&rsquo;ll need to use X-forwarding.
+If you do not have X-forwarding enabled, you&rsquo;ll get an
+exception which looks similar to this:</p>
+<pre><code>Exception in thread &quot;main&quot; java.awt.HeadlessException:
+No X11 DISPLAY variable was set, but this program performed an operation which requires it.
+	at java.desktop/java.awt.GraphicsEnvironment.checkHeadless(GraphicsEnvironment.java:208)
+	at java.desktop/java.awt.Window.&lt;init&gt;(Window.java:548)
+	at java.desktop/java.awt.Frame.&lt;init&gt;(Frame.java:423)
+	at java.desktop/javax.swing.JFrame.&lt;init&gt;(JFrame.java:224)
+	at DrawingPanel.&lt;init&gt;(DrawingPanel.java:87)
+	at Recursive.drawCarpet(Recursive.java:188)
+	at RecursiveTester.doCarpetTest(RecursiveTester.java:33)
+	at RecursiveTester.main(RecursiveTester.java:27)
+</code></pre>
+
+
+
+<div class="book-tabs"><input type="radio" class="hidden" name="tabs-xforwarding" id="tabs-xforwarding-0" checked="checked" />
+  <label for="tabs-xforwarding-0">Windows</label>
+  <div class="book-tabs-content markdown-inner"><h2 id="one-time-setup">One-Time Setup</h2>
+<p>Windows does not have a built-in X-Windows server so we&rsquo;ll need to
+install one. Xming is a free and popular choice.
+You can download the installer <a href="https://sourceforge.net/projects/xming/">here</a>.</p>
+<p>Open a command prompt and type the following commands:</p>
+<pre><code>mkdir \dev
+echo x &gt; \dev\tty
+</code></pre><h2 id="every-time-setup">Every-Time Setup</h2>
+<p>Make sure that Xming is running (it will be in the system tray when running).
+Then, when connecting to the lab machine, you&rsquo;ll need to add an extra argument
+to the <code>ssh</code> command:</p>
+<pre><code>set DISPLAY=localhost:0
+echo x &gt; \dev\tty
+ssh -Y CS_USER@CS_MACHINE.cs.utexas.edu
+</code></pre></div><input type="radio" class="hidden" name="tabs-xforwarding" id="tabs-xforwarding-1"  />
+  <label for="tabs-xforwarding-1">macOS</label>
+  <div class="book-tabs-content markdown-inner"><h2 id="one-time-setup">One-Time Setup</h2>
+<p>macOS does not have a built-in X-Windows server so we&rsquo;ll need to
+install one. XQuartz is free, open source and a popular option for macOS.
+You can download the installer <a href="https://www.xquartz.org">here</a>.</p>
+<h2 id="every-time-setup">Every-Time Setup</h2>
+<p>Once that is complete, you need to add an extra argument to the
+<code>ssh</code> command you use to connect to the lab machine:</p>
+<pre><code>ssh -X CS_USER@CS_MACHINE.cs.utexas.edu
+</code></pre></div><input type="radio" class="hidden" name="tabs-xforwarding" id="tabs-xforwarding-2"  />
+  <label for="tabs-xforwarding-2">Linux</label>
+  <div class="book-tabs-content markdown-inner"><h2 id="one-time-setup">One-Time Setup</h2>
+<p>None! Linux is by far the easiest platform for using X-Forwarding
+because it has XWindows built in!</p>
+<h2 id="every-time-setup">Every-Time Setup</h2>
+<p>All you need to do is add an extra argument to the <code>ssh</code> command
+you use to connect to the lab machine:</p>
+<pre><code>ssh -X CS_USER@CS_MACHINE.cs.utexas.edu
+</code></pre></div></div>
+
+<p>To test if enabling X-forwarding worked, try running this command
+on the lab machine over SSH:</p>
+<pre><code>xcowsay &quot;Hello, World\!&quot;
+</code></pre><p>If you see the message on your screen, it worked! You
+should now be able to run your graphical Java programs.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents"></nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

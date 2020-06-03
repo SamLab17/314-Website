@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming Problems on Sam&#39;s CS314 Site</title>
+    <link>https://www.cs.utexas.edu/~slaberge/docs/exam_review/practice_questions/</link>
+    <description>Recent content in Programming Problems on Sam&#39;s CS314 Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://www.cs.utexas.edu/~slaberge/docs/exam_review/practice_questions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Problems by Topic</title>
+      <link>https://www.cs.utexas.edu/~slaberge/docs/exam_review/practice_questions/topics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~slaberge/docs/exam_review/practice_questions/topics/</guid>
+      <description>Programming Problems by Topic Array-based Lists Remove Odd Indices
+Insert All Front
+Sorted List Insert
+Linked Lists Reverse Doubly Linked List
+Merge Two Linked Lists
+Linked List Sums
+Add to Linked List of Digits
+Maps Sum Tabs
+Most Frequent Element
+Binary Trees Get Grandparent
+Binary Subtrees
+Verify Binary Search Trees
+Hash Tables Hash Table Contains
+Hash Set Difference
+Hash Table Resize
+Graphs Bipartite Graphs</description>
+    </item>
+    
+  </channel>
+</rss>
