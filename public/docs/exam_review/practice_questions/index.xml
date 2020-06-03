@@ -16,22 +16,44 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.cs.utexas.edu/~slaberge/docs/exam_review/practice_questions/topics/</guid>
-      <description>Programming Problems by Topic Array-based Lists Remove Odd Indices
-Insert All Front
+      <description>Programming Problems by Topic #  Array-based Lists #  Insert All Front
+Remove Odd Indices
 Sorted List Insert
-Linked Lists Reverse Doubly Linked List
+Linked Lists #  Reverse Doubly Linked List
 Merge Two Linked Lists
 Linked List Sums
 Add to Linked List of Digits
-Maps Sum Tabs
+Maps #  Sum Tabs
 Most Frequent Element
-Binary Trees Get Grandparent
+Binary Trees #  Get Grandparent
 Binary Subtrees
 Verify Binary Search Trees
-Hash Tables Hash Table Contains
+Hash Tables #  Hash Table Contains
+Hash Set Difference</description>
+    </item>
+    
+    <item>
+      <title>Problems by Difficulty</title>
+      <link>https://www.cs.utexas.edu/~slaberge/docs/exam_review/practice_questions/difficulty/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.cs.utexas.edu/~slaberge/docs/exam_review/practice_questions/difficulty/</guid>
+      <description>Programming Problems by Difficulty #  Easy #  Insert All Front
+Sum Tabs
+Get Grandparent
+Hash Table Contains
+Medium #  Remove Odd Indices
+Sorted List Insert
+Reverse Doubly Linked List
+Merge Two Linked Lists
+Linked List Sums
+Most Frequent Element
 Hash Set Difference
 Hash Table Resize
-Graphs Bipartite Graphs</description>
+Hard #  Add to Linked List of Digits
+Binary Subtrees
+Verify Binary Search Trees
+Bipartite Graphs</description>
     </item>
     
   </channel>

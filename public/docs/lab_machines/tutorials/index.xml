@@ -16,10 +16,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/tutorials/transferring/</guid>
-      <description>Transferring Files To transfer files to and from the CS department&amp;rsquo;s lab machines, we will use a file transfer protocol named SFTP (SSH File Transfer Protocol).
+      <description>Transferring Files #  To transfer files to and from the CS department&amp;rsquo;s lab machines, we will use a file transfer protocol named SFTP (SSH File Transfer Protocol).
 On macOS and Linux, you can transfer files over SFTP using the scp command. However, the command can be quite cumbersome and having a GUI application makes transferring files much easier.
-Below are some graphical applications for all operating systems which support SFTP.
-Windows WinSCP This is a free and open-source SFTP client for Windows.</description>
+Below are some graphical applications for all operating systems which support SFTP.</description>
     </item>
     
     <item>
@@ -28,7 +27,7 @@ Windows WinSCP This is a free and open-source SFTP client for Windows.</descript
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/tutorials/linux/</guid>
-      <description>Linux Basics You are about to see a lot of potentially unfamiliar commands below. Don&amp;rsquo;t worry about memorizing all of these right away .
+      <description>Linux Basics #  You are about to see a lot of potentially unfamiliar commands below. Don&amp;rsquo;t worry about memorizing all of these right away .
 The only way of getting familiar with these commands is by using them. So if that means you need to look up a Linux cheat-sheet every time or you print out a list of these on your desk, that&amp;rsquo;s perfectly normal.
 Some of these commands have strange, un-intuitive names which still cause the most experienced Linux users to forget or confuse them.</description>
     </item>
@@ -39,7 +38,7 @@ Some of these commands have strange, un-intuitive names which still cause the mo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/tutorials/java/</guid>
-      <description>Running Java Programs on Lab Machines Transferring your Program to the Lab Machines Firstly, transfer all the required .java and input files to the lab machines using an SFTP application of your choice. Put all of these files together in the same directory. I&amp;rsquo;d recommend making a directory just for these files because once we compile your program, it may generate a lot of .class files, and we wouldn&amp;rsquo;t want to clutter up another directory.</description>
+      <description>Running Java Programs on Lab Machines #  Transferring your Program to the Lab Machines #  Firstly, transfer all the required .java and input files to the lab machines using an SFTP application of your choice. Put all of these files together in the same directory. I&amp;rsquo;d recommend making a directory just for these files because once we compile your program, it may generate a lot of .class files, and we wouldn&amp;rsquo;t want to clutter up another directory.</description>
     </item>
     
     <item>
@@ -48,7 +47,7 @@ Some of these commands have strange, un-intuitive names which still cause the mo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/tutorials/gui/</guid>
-      <description>Running Graphical Programs Over SSH Although SSH connections are done through a command line interface, it is actually possible to run graphical applications over SSH using X-forwarding.
+      <description>Running Graphical Programs Over SSH #  Although SSH connections are done through a command line interface, it is actually possible to run graphical applications over SSH using X-forwarding.
 This trick can be useful for CS314 because some of our assignments use a GUI window. If you want to test one of these graphical programs on the lab machines, you&amp;rsquo;ll need to use X-forwarding. If you do not have X-forwarding enabled, you&amp;rsquo;ll get an exception which looks similar to this:</description>
     </item>
     

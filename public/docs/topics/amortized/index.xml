@@ -17,7 +17,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.cs.utexas.edu/~slaberge/docs/topics/amortized/dynamic_arrays/</guid>
-      <description>Amortized Analysis of Dynamic Arrays The classic example of amortized analysis is appending to the end of a dynamic array. In Java, this would be the add() method as part of the ArrayList class. When we insert into a dynamic array there are two possible behaviors:
+      <description>Amortized Analysis of Dynamic Arrays #  The classic example of amortized analysis is appending to the end of a dynamic array. In Java, this would be the add() method as part of the ArrayList class. When we insert into a dynamic array there are two possible behaviors:
  There is still room in the array and we can simply add the value into the array. There is no more room in the array so we need to make a new, larger array, copy over all the elements into the new array, and then finally add the new value.</description>
     </item>
     

@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=>
 
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SSH Keys Setting up SSH Keys will allow us to connect to the lab machines from off-campus without needing to use the VPN.
-SSH Keys are also a more secure form of authentication than just passwords. So, if you ever set up a server which is accessible over the internet (say, for a website) in the future, make sure to use SSH Keys for authentication.  Prerequisites  Make sure you can connect to a lab machine over SSH.">
+<meta name="description" content="SSH Keys #  Setting up SSH Keys will allow us to connect to the lab machines from off-campus without needing to use the VPN.
+SSH Keys are also a more secure form of authentication than just passwords. So, if you ever set up a server which is accessible over the internet (say, for a website) in the future, make sure to use SSH Keys for authentication.  Prerequisites #   Make sure you can connect to a lab machine over SSH.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="SSH Keys" />
-<meta property="og:description" content="SSH Keys Setting up SSH Keys will allow us to connect to the lab machines from off-campus without needing to use the VPN.
-SSH Keys are also a more secure form of authentication than just passwords. So, if you ever set up a server which is accessible over the internet (say, for a website) in the future, make sure to use SSH Keys for authentication.  Prerequisites  Make sure you can connect to a lab machine over SSH." />
+<meta property="og:description" content="SSH Keys #  Setting up SSH Keys will allow us to connect to the lab machines from off-campus without needing to use the VPN.
+SSH Keys are also a more secure form of authentication than just passwords. So, if you ever set up a server which is accessible over the internet (say, for a website) in the future, make sure to use SSH Keys for authentication.  Prerequisites #   Make sure you can connect to a lab machine over SSH." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/keys/" />
 
 <title>SSH Keys | Sam&#39;s CS314 Site</title>
 <link rel="manifest" href="/~slaberge/manifest.json">
 <link rel="icon" href="/~slaberge/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/~slaberge/book.min.47499b1062a580086a31f74615b8797b5bafd0e9ea5c8a0abc577412d989bcdc.css" integrity="sha256-R0mbEGKlgAhqMfdGFbh5e1uv0OnqXIoKvFd0EtmJvNw=">
-<script defer src="/~slaberge/en.search.min.0c2644028f48da3db08b2e3d1dad5708c1da25bf5ea70c509dff5181f6889fab.js" integrity="sha256-DCZEAo9I2j2wiy49Ha1XCMHaJb9epwxQnf9RgfaIn6s="></script>
+<link rel="stylesheet" href="/~slaberge/book.min.034944dbf27e1a87c17b9e34e633e5b26be61f59ea09216021609ba7f015c6f0.css" integrity="sha256-A0lE2/J&#43;GofBe5405jPlsmvmH1nqCSFgIWCbp/AVxvA=">
+<script defer src="/~slaberge/en.search.min.abfddc132aa7b297c0e307840950a0c03c4fc343fbfce2d54eda08c5bfee5edc.js" integrity="sha256-q/3cEyqnspfA4weECVCgwDxPw0P7/OLVTtoIxb/uXtw="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -25,7 +25,7 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
+<body dir=>
   <input type="checkbox" class="hidden" id="menu-control" />
   <main class="container flex">
     <aside class="book-menu">
@@ -39,7 +39,7 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -269,7 +269,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <span>Programming Problems</span>
+    <a href="/~slaberge/docs/exam_review/practice_questions/" class="collapsed ">Programming Problems</a>
   
 
           
@@ -277,20 +277,6 @@ https://github.com/alex-shpak/hugo-book
   
   
 
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-    <a href="/~slaberge/docs/exam_review/practice_questions/topics/" class="">Problems by Topic</a>
-  
-
-        </li>
-      
-    
-  </ul>
   
 
         </li>
@@ -341,7 +327,9 @@ https://github.com/alex-shpak/hugo-book
   <strong>SSH Keys</strong>
 
   <label for="toc-control">
+    
     <img src="/~slaberge/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
@@ -367,7 +355,10 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="ssh-keys">SSH Keys</h1>
+  <article class="markdown"><h1 id="ssh-keys">
+  SSH Keys
+  <a class="anchor" href="#ssh-keys">#</a>
+</h1>
 <p>Setting up SSH Keys will allow us to connect to the lab machines
 from off-campus without needing to use the VPN.</p>
 <blockquote class="book-hint ">
@@ -377,12 +368,18 @@ the internet (say, for a website) in the future, make sure to use
 SSH Keys for authentication.
 </blockquote>
 
-<h2 id="prerequisites">Prerequisites</h2>
+<h2 id="prerequisites">
+  Prerequisites
+  <a class="anchor" href="#prerequisites">#</a>
+</h2>
 <ul>
 <li>Make sure you can connect to a lab machine over SSH. This
 may require using the UT VPN if off-campus.</li>
 </ul>
-<h2 id="creating-a-key-pair">Creating a Key Pair</h2>
+<h2 id="creating-a-key-pair">
+  Creating a Key Pair
+  <a class="anchor" href="#creating-a-key-pair">#</a>
+</h2>
 <p>First, we need to create a public/private key pair on our local
 machine. The public key will be sent to the lab machine whereas the
 private key should remain on your personal computer and never be
@@ -410,7 +407,10 @@ your home directory. On Windows it is located in
 <p>The private key is stored in the same directory but named <code>id_rsa</code>.
 <strong>This file should never be moved off of your computer or
 shared with anyone.</strong></p>
-<h2 id="sending-your-key-to-the-lab-machine">Sending your key to the Lab Machine</h2>
+<h2 id="sending-your-key-to-the-lab-machine">
+  Sending your key to the Lab Machine
+  <a class="anchor" href="#sending-your-key-to-the-lab-machine">#</a>
+</h2>
 <p>Now, we need to send a copy of our public key to a lab machine
 Once your key has been copied to one lab machine, it can be used to log in to <em>any other</em> lab machine.
 Follow the instructions for your operating system:</p>
@@ -436,7 +436,10 @@ replace <code>CS_USER</code> with your CS username.</p>
 
 <p>If everything was done successfully, you should now be able to log
 into the lab machines from off-campus (without using the VPN)!</p>
-<h2 id="sources">Sources</h2>
+<h2 id="sources">
+  Sources
+  <a class="anchor" href="#sources">#</a>
+</h2>
 <p>This guide is based on UTCS&rsquo;s guide found <a href="https://www.cs.utexas.edu/ssh-keys">here</a>.</p>
 </article>
  

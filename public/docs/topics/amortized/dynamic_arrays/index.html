@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=>
 
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Amortized Analysis of Dynamic Arrays The classic example of amortized analysis is appending to the end of a dynamic array. In Java, this would be the add() method as part of the ArrayList class. When we insert into a dynamic array there are two possible behaviors:
+<meta name="description" content="Amortized Analysis of Dynamic Arrays #  The classic example of amortized analysis is appending to the end of a dynamic array. In Java, this would be the add() method as part of the ArrayList class. When we insert into a dynamic array there are two possible behaviors:
  There is still room in the array and we can simply add the value into the array. There is no more room in the array so we need to make a new, larger array, copy over all the elements into the new array, and then finally add the new value.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Dynamic Arrays" />
-<meta property="og:description" content="Amortized Analysis of Dynamic Arrays The classic example of amortized analysis is appending to the end of a dynamic array. In Java, this would be the add() method as part of the ArrayList class. When we insert into a dynamic array there are two possible behaviors:
+<meta property="og:description" content="Amortized Analysis of Dynamic Arrays #  The classic example of amortized analysis is appending to the end of a dynamic array. In Java, this would be the add() method as part of the ArrayList class. When we insert into a dynamic array there are two possible behaviors:
  There is still room in the array and we can simply add the value into the array. There is no more room in the array so we need to make a new, larger array, copy over all the elements into the new array, and then finally add the new value." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.cs.utexas.edu/~slaberge/docs/topics/amortized/dynamic_arrays/" />
@@ -15,8 +15,8 @@
 <title>Dynamic Arrays | Sam&#39;s CS314 Site</title>
 <link rel="manifest" href="/~slaberge/manifest.json">
 <link rel="icon" href="/~slaberge/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/~slaberge/book.min.47499b1062a580086a31f74615b8797b5bafd0e9ea5c8a0abc577412d989bcdc.css" integrity="sha256-R0mbEGKlgAhqMfdGFbh5e1uv0OnqXIoKvFd0EtmJvNw=">
-<script defer src="/~slaberge/en.search.min.0c2644028f48da3db08b2e3d1dad5708c1da25bf5ea70c509dff5181f6889fab.js" integrity="sha256-DCZEAo9I2j2wiy49Ha1XCMHaJb9epwxQnf9RgfaIn6s="></script>
+<link rel="stylesheet" href="/~slaberge/book.min.034944dbf27e1a87c17b9e34e633e5b26be61f59ea09216021609ba7f015c6f0.css" integrity="sha256-A0lE2/J&#43;GofBe5405jPlsmvmH1nqCSFgIWCbp/AVxvA=">
+<script defer src="/~slaberge/en.search.min.abfddc132aa7b297c0e307840950a0c03c4fc343fbfce2d54eda08c5bfee5edc.js" integrity="sha256-q/3cEyqnspfA4weECVCgwDxPw0P7/OLVTtoIxb/uXtw="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -25,7 +25,7 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
+<body dir=>
   <input type="checkbox" class="hidden" id="menu-control" />
   <main class="container flex">
     <aside class="book-menu">
@@ -39,7 +39,7 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -269,7 +269,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <span>Programming Problems</span>
+    <a href="/~slaberge/docs/exam_review/practice_questions/" class="collapsed ">Programming Problems</a>
   
 
           
@@ -277,20 +277,6 @@ https://github.com/alex-shpak/hugo-book
   
   
 
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-    <a href="/~slaberge/docs/exam_review/practice_questions/topics/" class="">Problems by Topic</a>
-  
-
-        </li>
-      
-    
-  </ul>
   
 
         </li>
@@ -341,7 +327,9 @@ https://github.com/alex-shpak/hugo-book
   <strong>Dynamic Arrays</strong>
 
   <label for="toc-control">
+    
     <img src="/~slaberge/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
@@ -372,7 +360,10 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="amortized-analysis-of-dynamic-arrays">Amortized Analysis of Dynamic Arrays</h1>
+  <article class="markdown"><h1 id="amortized-analysis-of-dynamic-arrays">
+  Amortized Analysis of Dynamic Arrays
+  <a class="anchor" href="#amortized-analysis-of-dynamic-arrays">#</a>
+</h1>
 <p>The classic example of amortized analysis is appending to the end of a dynamic
 array. In Java, this would be the <code>add()</code> method as part of the <code>ArrayList</code>
 class. When we insert into a dynamic array there are two possible behaviors:</p>
@@ -392,7 +383,10 @@ we resize, we have two options for large to make the new internal array:</p>
 <p>Let&rsquo;s do an amortized analysis for both cases. We will add \( N + 1 \) elements
 to the lists (it makes the math a bit nicer than adding \( N \)).
 For both cases we assume \(N \gg k \).</p>
-<h2 id="increase-by-a-constant--k-">Increase by a Constant \( k \)</h2>
+<h2 id="increase-by-a-constant--k-">
+  Increase by a Constant \( k \)
+  <a class="anchor" href="#increase-by-a-constant--k-">#</a>
+</h2>
 <p>Suppose we start with an array of size \( k \). Once we try to add the \(k + 1^{th}\)
 element to the list, we will need to resize. In this case we will add another \( k \)
 spots to our internal array, creating a new array of size \(2k\) and copy our \(k\)
@@ -415,12 +409,18 @@ for each call to <code>add()</code> would be:</p>
 <p>\[
 \frac{O(N^2)}{N+1} \approx O(N)
 \]</p>
-<h2 id="increase-by-a-constant-factor-k">Increase by a Constant Factor \(k\)</h2>
+<h2 id="increase-by-a-constant-factor-k">
+  Increase by a Constant Factor \(k\)
+  <a class="anchor" href="#increase-by-a-constant-factor-k">#</a>
+</h2>
 <p>If we increase the size by a constant factor, we say that the length of the
 internal array grows geometrically (as in a geometric series).
 For simplicity, let&rsquo;s first consider the case where \(k = 2 \), then we can
 look at the more general case (although both will have the same conclusion).</p>
-<h3 id="doubling-the-size-k--2">Doubling the Size (\(k = 2\))</h3>
+<h3 id="doubling-the-size-k--2">
+  Doubling the Size (\(k = 2\))
+  <a class="anchor" href="#doubling-the-size-k--2">#</a>
+</h3>
 <p>Suppose we started with an internal array of size 1 (really ridiculous, I know, but it makes
 the math more apparent). Once we try to add the second element to the list, we&rsquo;ll need
 to resize our array to a size of 2 and copy our one element over. When we try to add the third
@@ -441,7 +441,10 @@ Dividing this by the \(N+1\) insertions, the amortized cost for each call to
 <p>\[
 \frac{O(N)}{N+1} \approx O(1)
 \]</p>
-<h3 id="generalized-to-any-factor--k--1">Generalized to Any Factor \( (k &gt; 1)\)</h3>
+<h3 id="generalized-to-any-factor--k--1">
+  Generalized to Any Factor \( (k &gt; 1)\)
+  <a class="anchor" href="#generalized-to-any-factor--k--1">#</a>
+</h3>
 <p>If we generalize to any factor \(k\), the logic from above stays about the same.
 However, the sum will change:</p>
 <p>\[
@@ -453,12 +456,18 @@ k^0 + k^1 + k^2 + &hellip; + N = \sum_{i=0}^{\log_{k}{N}}{k^i}
 \frac{k^{\log_k{N}}k + 1}{k-1} = \frac{Nk + 1}{k-1} \approx O(N)
 \]</p>
 <p>Thus, resizing by any factor \(k\) also results in \(O(N)\) time for resizing.</p>
-<h2 id="conculsion">Conculsion</h2>
+<h2 id="conculsion">
+  Conculsion
+  <a class="anchor" href="#conculsion">#</a>
+</h2>
 <p>The Big O of adding to the end of a dynamic array, <code>ArrayList</code> in Java, depends
 on the resize behavior. If we simply add a constant \(k\) to the size every time,
 then adding to the end of the array is on average \(O(N)\). If we increase the size
 by a factor (we multiply the size), adding to then end is on average \(O(1)\).</p>
-<h2 id="footnotes">Footnotes</h2>
+<h2 id="footnotes">
+  Footnotes
+  <a class="anchor" href="#footnotes">#</a>
+</h2>
 <p><sup>1</sup> In Java, \(N\) would actually be the size of the new array container
 because Java will initialize all elements in the array to <code>null</code>. However, in other
 languages this initialization is not done and it will be simpler to use this

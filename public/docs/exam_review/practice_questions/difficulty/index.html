@@ -4,15 +4,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Connecting with SSH #  We will connect to the Lab Machines using a protocol called SSH (for Secure Shell). It will allow us to remotely access a machine&rsquo;s command line.
-Prerequisites #   Make sure you know your CS account username and password Find an available CS machine to connect to with this link If off-campus, make sure you are connected to the VPN or have set up SSH keys  The SSH Command #  Firstly, you&rsquo;ll need to open your terminal application of choice.">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Connecting with SSH" />
-<meta property="og:description" content="Connecting with SSH #  We will connect to the Lab Machines using a protocol called SSH (for Secure Shell). It will allow us to remotely access a machine&rsquo;s command line.
-Prerequisites #   Make sure you know your CS account username and password Find an available CS machine to connect to with this link If off-campus, make sure you are connected to the VPN or have set up SSH keys  The SSH Command #  Firstly, you&rsquo;ll need to open your terminal application of choice." />
+<meta name="description" content="Programming problems sorted by their &#39;difficulty&#39;">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Problems by Difficulty" />
+<meta property="og:description" content="Programming problems sorted by their &#39;difficulty&#39;" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/ssh/" />
+<meta property="og:url" content="https://www.cs.utexas.edu/~slaberge/docs/exam_review/practice_questions/difficulty/" />
 
-<title>Connecting with SSH | Sam&#39;s CS314 Site</title>
+<title>Problems by Difficulty | Sam&#39;s CS314 Site</title>
 <link rel="manifest" href="/~slaberge/manifest.json">
 <link rel="icon" href="/~slaberge/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/~slaberge/book.min.034944dbf27e1a87c17b9e34e633e5b26be61f59ea09216021609ba7f015c6f0.css" integrity="sha256-A0lE2/J&#43;GofBe5405jPlsmvmH1nqCSFgIWCbp/AVxvA=">
@@ -161,7 +159,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/~slaberge/docs/lab_machines/ssh/ssh/" class="active">Connecting with SSH</a>
+    <a href="/~slaberge/docs/lab_machines/ssh/ssh/" class="">Connecting with SSH</a>
   
 
         </li>
@@ -278,6 +276,30 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/exam_review/practice_questions/topics/" class="">Problems by Topic</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/exam_review/practice_questions/difficulty/" class="active">Problems by Difficulty</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
 
         </li>
       
@@ -324,7 +346,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/~slaberge/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Connecting with SSH</strong>
+  <strong>Problems by Difficulty</strong>
 
   <label for="toc-control">
     
@@ -340,8 +362,9 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#prerequisites">Prerequisites</a></li>
-    <li><a href="#the-ssh-command">The SSH Command</a></li>
+    <li><a href="#easy">Easy</a></li>
+    <li><a href="#medium">Medium</a></li>
+    <li><a href="#hard">Hard</a></li>
   </ul>
 </nav>
 
@@ -353,54 +376,38 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="connecting-with-ssh">
-  Connecting with SSH
-  <a class="anchor" href="#connecting-with-ssh">#</a>
+  <article class="markdown"><h1 id="programming-problems-by-difficulty">
+  Programming Problems by Difficulty
+  <a class="anchor" href="#programming-problems-by-difficulty">#</a>
 </h1>
-<p>We will connect to the Lab Machines using a protocol called
-SSH (for <strong>S</strong>ecure <strong>Sh</strong>ell). It will allow us to remotely
-access a machine&rsquo;s command line.</p>
-<h2 id="prerequisites">
-  Prerequisites
-  <a class="anchor" href="#prerequisites">#</a>
+<h2 id="easy">
+  Easy
+  <a class="anchor" href="#easy">#</a>
 </h2>
-<ul>
-<li>Make sure you know your CS account username and password</li>
-<li>Find an available CS machine to connect to with <a href="https://apps.cs.utexas.edu/unixlabstatus/">this link</a></li>
-<li>If off-campus, make sure you are connected to the VPN or have set up SSH keys</li>
-</ul>
-<h2 id="the-ssh-command">
-  The SSH Command
-  <a class="anchor" href="#the-ssh-command">#</a>
+<p><a href="/~slaberge/problem_pages/insert_all_front">Insert All Front</a></p>
+<p><a href="/~slaberge/problem_pages/sum_tabs">Sum Tabs</a></p>
+<p><a href="/~slaberge/problem_pages/get_grandparent">Get Grandparent</a></p>
+<p><a href="/~slaberge/problem_pages/hash_table_contains">Hash Table Contains</a></p>
+<h2 id="medium">
+  Medium
+  <a class="anchor" href="#medium">#</a>
 </h2>
-<p>Firstly, you&rsquo;ll need to open your terminal application of
-choice. On macOS, the default pre-installed terminal is called
-<code>Terminal</code>. On Windows, the pre-installed <code>Command Prompt</code>
-will work, too.</p>
-<p>You should now have a blank prompt which looks something like
-this:</p>
-<p><img src="/~slaberge/ssh_images/Terminal0.png" alt="Empty Terminal" /></p>
-<p>Now, we can issue the SSH command to open a connection with
-one of the UTCS Lab machines:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh &lt;CS Username&gt;@&lt;Machine Name&gt;.cs.utexas.edu
-</code></pre></div><p>My username is <code>slaberge</code> and I am connecting to the
-<code>aggravation</code> machine. So the command I&rsquo;ll use looks like:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh slaberge@aggravation.cs.utexas.edu
-</code></pre></div><p><img src="/~slaberge/ssh_images/Terminal1.png" alt="SSH Command" /></p>
-<p>Press enter to issue the command. You will be asked to enter
-your CS account password. If you do not remember it, use
-<a href="https://www.cs.utexas.edu/faq/68688">this link</a>. If you set
-up SSH keys, you may be asked for your key&rsquo;s passphrase.</p>
-<blockquote class="book-hint ">
-  If you are on Windows and the <code>ssh</code> command could not be found,
-you may need to enable it. Try following
-<a href="https://ittutorials.net/microsoft/windows-10/enable-ssh-windows-10-command-prompt/">this tutorial</a>.
-</blockquote>
-
-<p><img src="/~slaberge/ssh_images/Terminal2.png" alt="Linux Prompt" /></p>
-<p>The prompt you see will most likely not look like the one above, but if you see the name of the machine you connected to in the prompt, then you successfully connected!</p>
-<p>If you got an error, first make sure you entered the command correctly.
-You can use the up arrow to fill in the prompt with the previous command in your history.</p>
+<p><a href="/~slaberge/problem_pages/remove_odd_indices">Remove Odd Indices</a></p>
+<p><a href="/~slaberge/problem_pages/sorted_list_insert">Sorted List Insert</a></p>
+<p><a href="/~slaberge/problem_pages/reverse_doubly_linked_list">Reverse Doubly Linked List</a></p>
+<p><a href="/~slaberge/problem_pages/merge_two_linked_lists">Merge Two Linked Lists</a></p>
+<p><a href="/~slaberge/problem_pages/linked_list_sums">Linked List Sums</a></p>
+<p><a href="/~slaberge/problem_pages/most_frequent_element">Most Frequent Element</a></p>
+<p><a href="/~slaberge/problem_pages/hash_set_difference">Hash Set Difference</a></p>
+<p><a href="/~slaberge/problem_pages/hash_table_resize">Hash Table Resize</a></p>
+<h2 id="hard">
+  Hard
+  <a class="anchor" href="#hard">#</a>
+</h2>
+<p><a href="/~slaberge/problem_pages/add_to_linked_list_digits">Add to Linked List of Digits</a></p>
+<p><a href="/~slaberge/problem_pages/binary_subtrees">Binary Subtrees</a></p>
+<p><a href="/~slaberge/problem_pages/verify_bst">Verify Binary Search Trees</a></p>
+<p><a href="/~slaberge/problem_pages/bipartite_graphs">Bipartite Graphs</a></p>
 </article>
  
       
@@ -435,8 +442,9 @@ You can use the up arrow to fill in the prompt with the previous command in your
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#prerequisites">Prerequisites</a></li>
-    <li><a href="#the-ssh-command">The SSH Command</a></li>
+    <li><a href="#easy">Easy</a></li>
+    <li><a href="#medium">Medium</a></li>
+    <li><a href="#hard">Hard</a></li>
   </ul>
 </nav>
 

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=>
 
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Running Graphical Programs Over SSH Although SSH connections are done through a command line interface, it is actually possible to run graphical applications over SSH using X-forwarding.
+<meta name="description" content="Running Graphical Programs Over SSH #  Although SSH connections are done through a command line interface, it is actually possible to run graphical applications over SSH using X-forwarding.
 This trick can be useful for CS314 because some of our assignments use a GUI window. If you want to test one of these graphical programs on the lab machines, you&rsquo;ll need to use X-forwarding. If you do not have X-forwarding enabled, you&rsquo;ll get an exception which looks similar to this:">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Running GUI Programs" />
-<meta property="og:description" content="Running Graphical Programs Over SSH Although SSH connections are done through a command line interface, it is actually possible to run graphical applications over SSH using X-forwarding.
+<meta property="og:description" content="Running Graphical Programs Over SSH #  Although SSH connections are done through a command line interface, it is actually possible to run graphical applications over SSH using X-forwarding.
 This trick can be useful for CS314 because some of our assignments use a GUI window. If you want to test one of these graphical programs on the lab machines, you&rsquo;ll need to use X-forwarding. If you do not have X-forwarding enabled, you&rsquo;ll get an exception which looks similar to this:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.cs.utexas.edu/~slaberge/docs/lab_machines/tutorials/gui/" />
@@ -15,8 +15,8 @@ This trick can be useful for CS314 because some of our assignments use a GUI win
 <title>Running GUI Programs | Sam&#39;s CS314 Site</title>
 <link rel="manifest" href="/~slaberge/manifest.json">
 <link rel="icon" href="/~slaberge/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/~slaberge/book.min.47499b1062a580086a31f74615b8797b5bafd0e9ea5c8a0abc577412d989bcdc.css" integrity="sha256-R0mbEGKlgAhqMfdGFbh5e1uv0OnqXIoKvFd0EtmJvNw=">
-<script defer src="/~slaberge/en.search.min.0c2644028f48da3db08b2e3d1dad5708c1da25bf5ea70c509dff5181f6889fab.js" integrity="sha256-DCZEAo9I2j2wiy49Ha1XCMHaJb9epwxQnf9RgfaIn6s="></script>
+<link rel="stylesheet" href="/~slaberge/book.min.034944dbf27e1a87c17b9e34e633e5b26be61f59ea09216021609ba7f015c6f0.css" integrity="sha256-A0lE2/J&#43;GofBe5405jPlsmvmH1nqCSFgIWCbp/AVxvA=">
+<script defer src="/~slaberge/en.search.min.abfddc132aa7b297c0e307840950a0c03c4fc343fbfce2d54eda08c5bfee5edc.js" integrity="sha256-q/3cEyqnspfA4weECVCgwDxPw0P7/OLVTtoIxb/uXtw="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -25,7 +25,7 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
+<body dir=>
   <input type="checkbox" class="hidden" id="menu-control" />
   <main class="container flex">
     <aside class="book-menu">
@@ -39,7 +39,7 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -269,7 +269,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <span>Programming Problems</span>
+    <a href="/~slaberge/docs/exam_review/practice_questions/" class="collapsed ">Programming Problems</a>
   
 
           
@@ -277,20 +277,6 @@ https://github.com/alex-shpak/hugo-book
   
   
 
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-    <a href="/~slaberge/docs/exam_review/practice_questions/topics/" class="">Problems by Topic</a>
-  
-
-        </li>
-      
-    
-  </ul>
   
 
         </li>
@@ -341,7 +327,9 @@ https://github.com/alex-shpak/hugo-book
   <strong>Running GUI Programs</strong>
 
   <label for="toc-control">
+    
     <img src="/~slaberge/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
@@ -360,7 +348,10 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="running-graphical-programs-over-ssh">Running Graphical Programs Over SSH</h1>
+  <article class="markdown"><h1 id="running-graphical-programs-over-ssh">
+  Running Graphical Programs Over SSH
+  <a class="anchor" href="#running-graphical-programs-over-ssh">#</a>
+</h1>
 <p>Although SSH connections are done through a command line interface,
 it is actually possible to run graphical applications over
 SSH using X-forwarding.</p>

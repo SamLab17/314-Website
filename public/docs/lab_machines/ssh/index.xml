@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/vpn/</guid>
-      <description>The UT VPN Using the UT VPN will make it appear as though you are connected to UT&amp;rsquo;s on-campus internet. This can be very useful even outside of CS. If you are trying to access the UT library, online academic journals, or other university resources, you may need to use the VPN when off campus.
+      <description>The UT VPN #  Using the UT VPN will make it appear as though you are connected to UT&amp;rsquo;s on-campus internet. This can be very useful even outside of CS. If you are trying to access the UT library, online academic journals, or other university resources, you may need to use the VPN when off campus.
 Here, we will need to use the VPN to allow us to connect to the CS Department&amp;rsquo;s Lab Machines.</description>
     </item>
     
@@ -26,8 +26,8 @@ Here, we will need to use the VPN to allow us to connect to the CS Department&am
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/ssh/</guid>
-      <description>Connecting with SSH We will connect to the Lab Machines using a protocol called SSH (for Secure Shell). It will allow us to remotely access a machine&amp;rsquo;s command line.
-Prerequisites  Make sure you know your CS account username and password Find an available CS machine to connect to with this link If off-campus, make sure you are connected to the VPN or have set up SSH keys  The SSH Command Firstly, you&amp;rsquo;ll need to open your terminal application of choice.</description>
+      <description>Connecting with SSH #  We will connect to the Lab Machines using a protocol called SSH (for Secure Shell). It will allow us to remotely access a machine&amp;rsquo;s command line.
+Prerequisites #   Make sure you know your CS account username and password Find an available CS machine to connect to with this link If off-campus, make sure you are connected to the VPN or have set up SSH keys  The SSH Command #  Firstly, you&amp;rsquo;ll need to open your terminal application of choice.</description>
     </item>
     
     <item>
@@ -36,8 +36,8 @@ Prerequisites  Make sure you know your CS account username and password Find an 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/keys/</guid>
-      <description>SSH Keys Setting up SSH Keys will allow us to connect to the lab machines from off-campus without needing to use the VPN.
-SSH Keys are also a more secure form of authentication than just passwords. So, if you ever set up a server which is accessible over the internet (say, for a website) in the future, make sure to use SSH Keys for authentication.  Prerequisites  Make sure you can connect to a lab machine over SSH.</description>
+      <description>SSH Keys #  Setting up SSH Keys will allow us to connect to the lab machines from off-campus without needing to use the VPN.
+SSH Keys are also a more secure form of authentication than just passwords. So, if you ever set up a server which is accessible over the internet (say, for a website) in the future, make sure to use SSH Keys for authentication.  Prerequisites #   Make sure you can connect to a lab machine over SSH.</description>
     </item>
     
   </channel>

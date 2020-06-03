@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=>
 
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Linux Basics You are about to see a lot of potentially unfamiliar commands below. Don&rsquo;t worry about memorizing all of these right away .
+<meta name="description" content="Linux Basics #  You are about to see a lot of potentially unfamiliar commands below. Don&rsquo;t worry about memorizing all of these right away .
 The only way of getting familiar with these commands is by using them. So if that means you need to look up a Linux cheat-sheet every time or you print out a list of these on your desk, that&rsquo;s perfectly normal.
 Some of these commands have strange, un-intuitive names which still cause the most experienced Linux users to forget or confuse them.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Linux Basics" />
-<meta property="og:description" content="Linux Basics You are about to see a lot of potentially unfamiliar commands below. Don&rsquo;t worry about memorizing all of these right away .
+<meta property="og:description" content="Linux Basics #  You are about to see a lot of potentially unfamiliar commands below. Don&rsquo;t worry about memorizing all of these right away .
 The only way of getting familiar with these commands is by using them. So if that means you need to look up a Linux cheat-sheet every time or you print out a list of these on your desk, that&rsquo;s perfectly normal.
 Some of these commands have strange, un-intuitive names which still cause the most experienced Linux users to forget or confuse them." />
 <meta property="og:type" content="article" />
@@ -17,8 +17,8 @@ Some of these commands have strange, un-intuitive names which still cause the mo
 <title>Linux Basics | Sam&#39;s CS314 Site</title>
 <link rel="manifest" href="/~slaberge/manifest.json">
 <link rel="icon" href="/~slaberge/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/~slaberge/book.min.47499b1062a580086a31f74615b8797b5bafd0e9ea5c8a0abc577412d989bcdc.css" integrity="sha256-R0mbEGKlgAhqMfdGFbh5e1uv0OnqXIoKvFd0EtmJvNw=">
-<script defer src="/~slaberge/en.search.min.0c2644028f48da3db08b2e3d1dad5708c1da25bf5ea70c509dff5181f6889fab.js" integrity="sha256-DCZEAo9I2j2wiy49Ha1XCMHaJb9epwxQnf9RgfaIn6s="></script>
+<link rel="stylesheet" href="/~slaberge/book.min.034944dbf27e1a87c17b9e34e633e5b26be61f59ea09216021609ba7f015c6f0.css" integrity="sha256-A0lE2/J&#43;GofBe5405jPlsmvmH1nqCSFgIWCbp/AVxvA=">
+<script defer src="/~slaberge/en.search.min.abfddc132aa7b297c0e307840950a0c03c4fc343fbfce2d54eda08c5bfee5edc.js" integrity="sha256-q/3cEyqnspfA4weECVCgwDxPw0P7/OLVTtoIxb/uXtw="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -27,7 +27,7 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
+<body dir=>
   <input type="checkbox" class="hidden" id="menu-control" />
   <main class="container flex">
     <aside class="book-menu">
@@ -41,7 +41,7 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -271,7 +271,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <span>Programming Problems</span>
+    <a href="/~slaberge/docs/exam_review/practice_questions/" class="collapsed ">Programming Problems</a>
   
 
           
@@ -279,20 +279,6 @@ https://github.com/alex-shpak/hugo-book
   
   
 
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-    <a href="/~slaberge/docs/exam_review/practice_questions/topics/" class="">Problems by Topic</a>
-  
-
-        </li>
-      
-    
-  </ul>
   
 
         </li>
@@ -343,7 +329,9 @@ https://github.com/alex-shpak/hugo-book
   <strong>Linux Basics</strong>
 
   <label for="toc-control">
+    
     <img src="/~slaberge/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
@@ -369,7 +357,10 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="linux-basics">Linux Basics</h1>
+  <article class="markdown"><h1 id="linux-basics">
+  Linux Basics
+  <a class="anchor" href="#linux-basics">#</a>
+</h1>
 <p>You are about to see a lot of potentially unfamiliar commands below. <strong>Don&rsquo;t worry about memorizing all of these right away .</strong></p>
 <p>The only way of getting familiar with these commands is
 by using them. So if that means you need to look up a
@@ -378,7 +369,10 @@ these on your desk, that&rsquo;s perfectly normal.</p>
 <p>Some of these commands have strange, un-intuitive names
 which still cause the most experienced Linux users to
 forget or confuse them.</p>
-<h2 id="syntax-used">Syntax Used</h2>
+<h2 id="syntax-used">
+  Syntax Used
+  <a class="anchor" href="#syntax-used">#</a>
+</h2>
 <p>When a command is shown in a code block, it may be followed by <em>optional</em> or <em>required</em> arguments:</p>
 <ul>
 <li>
@@ -391,7 +385,10 @@ brackets: <code>&lt;required&gt;</code>.</p>
 </li>
 </ul>
 <p><strong>When you actually enter these commands at a prompt, do not include any brackets.</strong></p>
-<h2 id="file-system-commands">File System Commands</h2>
+<h2 id="file-system-commands">
+  File System Commands
+  <a class="anchor" href="#file-system-commands">#</a>
+</h2>
 <p><code>pwd</code> - Print the <strong>c</strong>urrent <strong>w</strong>orking <strong>d</strong>irectory.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pwd
 </code></pre></div><hr>
@@ -419,7 +416,10 @@ department.</p>
 </code></pre></div><hr>
 <p><code>rmdir</code> - Delete an empty directory</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rmdir &lt;Directory Name&gt;
-</code></pre></div><h2 id="other-commands">Other Commands</h2>
+</code></pre></div><h2 id="other-commands">
+  Other Commands
+  <a class="anchor" href="#other-commands">#</a>
+</h2>
 <p><code>cat</code> - Output the contents of a file to the screen</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat &lt;File name&gt;
 </code></pre></div><hr>
@@ -431,7 +431,10 @@ department.</p>
 </code></pre></div><hr>
 <p><code>vim</code> - Open the vim text editor. To quit, first press Escape then type <code>:q!</code> to quit without saving, or <code>:wq</code> to save and quit.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vim <span style="color:#f92672">[</span>File name<span style="color:#f92672">]</span>
-</code></pre></div><h2 id="how-to-learn-more-about-a-command">How to Learn More About a Command</h2>
+</code></pre></div><h2 id="how-to-learn-more-about-a-command">
+  How to Learn More About a Command
+  <a class="anchor" href="#how-to-learn-more-about-a-command">#</a>
+</h2>
 <p>Most commands have many arguments you can specify to
 them. If you want to see all the possible arguments
 you can provide to a command and what they do, you can

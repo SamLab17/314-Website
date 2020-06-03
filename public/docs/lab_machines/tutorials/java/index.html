@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir=>
 
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Running Java Programs on Lab Machines Transferring your Program to the Lab Machines Firstly, transfer all the required .java and input files to the lab machines using an SFTP application of your choice. Put all of these files together in the same directory. I&rsquo;d recommend making a directory just for these files because once we compile your program, it may generate a lot of .class files, and we wouldn&rsquo;t want to clutter up another directory.">
+<meta name="description" content="Running Java Programs on Lab Machines #  Transferring your Program to the Lab Machines #  Firstly, transfer all the required .java and input files to the lab machines using an SFTP application of your choice. Put all of these files together in the same directory. I&rsquo;d recommend making a directory just for these files because once we compile your program, it may generate a lot of .class files, and we wouldn&rsquo;t want to clutter up another directory.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Running Java Programs" />
-<meta property="og:description" content="Running Java Programs on Lab Machines Transferring your Program to the Lab Machines Firstly, transfer all the required .java and input files to the lab machines using an SFTP application of your choice. Put all of these files together in the same directory. I&rsquo;d recommend making a directory just for these files because once we compile your program, it may generate a lot of .class files, and we wouldn&rsquo;t want to clutter up another directory." />
+<meta property="og:description" content="Running Java Programs on Lab Machines #  Transferring your Program to the Lab Machines #  Firstly, transfer all the required .java and input files to the lab machines using an SFTP application of your choice. Put all of these files together in the same directory. I&rsquo;d recommend making a directory just for these files because once we compile your program, it may generate a lot of .class files, and we wouldn&rsquo;t want to clutter up another directory." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.cs.utexas.edu/~slaberge/docs/lab_machines/tutorials/java/" />
 
 <title>Running Java Programs | Sam&#39;s CS314 Site</title>
 <link rel="manifest" href="/~slaberge/manifest.json">
 <link rel="icon" href="/~slaberge/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/~slaberge/book.min.47499b1062a580086a31f74615b8797b5bafd0e9ea5c8a0abc577412d989bcdc.css" integrity="sha256-R0mbEGKlgAhqMfdGFbh5e1uv0OnqXIoKvFd0EtmJvNw=">
-<script defer src="/~slaberge/en.search.min.0c2644028f48da3db08b2e3d1dad5708c1da25bf5ea70c509dff5181f6889fab.js" integrity="sha256-DCZEAo9I2j2wiy49Ha1XCMHaJb9epwxQnf9RgfaIn6s="></script>
+<link rel="stylesheet" href="/~slaberge/book.min.034944dbf27e1a87c17b9e34e633e5b26be61f59ea09216021609ba7f015c6f0.css" integrity="sha256-A0lE2/J&#43;GofBe5405jPlsmvmH1nqCSFgIWCbp/AVxvA=">
+<script defer src="/~slaberge/en.search.min.abfddc132aa7b297c0e307840950a0c03c4fc343fbfce2d54eda08c5bfee5edc.js" integrity="sha256-q/3cEyqnspfA4weECVCgwDxPw0P7/OLVTtoIxb/uXtw="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -23,7 +23,7 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
+<body dir=>
   <input type="checkbox" class="hidden" id="menu-control" />
   <main class="container flex">
     <aside class="book-menu">
@@ -37,7 +37,7 @@ https://github.com/alex-shpak/hugo-book
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -267,7 +267,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <span>Programming Problems</span>
+    <a href="/~slaberge/docs/exam_review/practice_questions/" class="collapsed ">Programming Problems</a>
   
 
           
@@ -275,20 +275,6 @@ https://github.com/alex-shpak/hugo-book
   
   
 
-  
-  <ul>
-    
-      
-        <li>
-          
-  
-    <a href="/~slaberge/docs/exam_review/practice_questions/topics/" class="">Problems by Topic</a>
-  
-
-        </li>
-      
-    
-  </ul>
   
 
         </li>
@@ -339,7 +325,9 @@ https://github.com/alex-shpak/hugo-book
   <strong>Running Java Programs</strong>
 
   <label for="toc-control">
+    
     <img src="/~slaberge/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
@@ -364,8 +352,14 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="running-java-programs-on-lab-machines">Running Java Programs on Lab Machines</h1>
-<h2 id="transferring-your-program-to-the-lab-machines">Transferring your Program to the Lab Machines</h2>
+  <article class="markdown"><h1 id="running-java-programs-on-lab-machines">
+  Running Java Programs on Lab Machines
+  <a class="anchor" href="#running-java-programs-on-lab-machines">#</a>
+</h1>
+<h2 id="transferring-your-program-to-the-lab-machines">
+  Transferring your Program to the Lab Machines
+  <a class="anchor" href="#transferring-your-program-to-the-lab-machines">#</a>
+</h2>
 <p>Firstly, transfer all the required <code>.java</code> and input
 files to the lab machines using an SFTP application of
 your choice. Put all of these files together in the same
@@ -374,7 +368,10 @@ these files because once we compile your program, it may
 generate a lot of <code>.class</code> files, and we wouldn&rsquo;t want to
 clutter up another directory.
 Now, connect to a lab machine using ssh and navigate to this directory using <code>cd</code>.</p>
-<h2 id="compiling-your-program">Compiling Your Program</h2>
+<h2 id="compiling-your-program">
+  Compiling Your Program
+  <a class="anchor" href="#compiling-your-program">#</a>
+</h2>
 <p>Once we are in the right directory, issue an <code>ls</code>
 command. You should be able to see all of your <code>.java</code>
 and input files.</p>
@@ -393,7 +390,10 @@ shouldn&rsquo;t see any output.</p>
 see all of the <code>.class</code> files as a result of the
 compilation.</p>
 <p><img src="/~slaberge/ssh_images/lsjavac.png" alt="ls javac" /></p>
-<h2 id="running-your-java-program">Running Your Java Program</h2>
+<h2 id="running-your-java-program">
+  Running Your Java Program
+  <a class="anchor" href="#running-your-java-program">#</a>
+</h2>
 <p>To run your program, you will once again need to know the
 name of the class which contains your <code>main</code> method. In
 this example, it is once again <code>NameSurfer</code>. To run your

@@ -16,6 +16,10 @@
   </url>
   
   <url>
+    <loc>https://www.cs.utexas.edu/~slaberge/docs/exam_review/practice_questions/topics/</loc>
+  </url>
+  
+  <url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/vpn/</loc>
   </url>
   
@@ -33,6 +37,10 @@
   
   <url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/tutorials/linux/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.cs.utexas.edu/~slaberge/docs/exam_review/practice_questions/difficulty/</loc>
   </url>
   
   <url>
@@ -120,10 +128,6 @@
   
   <url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.cs.utexas.edu/~slaberge/docs/exam_review/practice_questions/topics/</loc>
   </url>
   
   <url>
