@@ -1,0 +1,96 @@
+\documentclass[12pt,letter]{article}
+
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+\noindent\textsc{\large CS 314 Final Review --- Merge Two Sorted Lists --- \textbf{Solution}}
+
+\vspace{6pt}
+\noindent\textbf{Linked Lists}
+
+\vspace{2pt}
+\noindent Write an instance method for the \texttt{LinkedList314} class which will add all of the elements of another \texttt{LinkedList314} in sorted order.
+Both lists will already be in ascended order before this method is called. No elements of either list are \texttt{null}. 
+Your method \textbf{will not} return a list, instead it shall \textbf{alter} the calling list.
+
+\vspace{4pt}
+\noindent You may use the \texttt{.compareTo()} method. If two objects are equal, the one in \texttt{this} list comes first.
+The \texttt{E extends Comparable<...>} syntax ensures that all the elements in the Linked List implement the Comparable interface.
+This ensures that \texttt{compareTo()} can be safely called on the elements of the list.
+
+\begin{verbatim}
+/* Pre: other != null
+ * Post: This list will contain all of the elements in this list and other.
+ *       This list will be in sorted order.
+ */
+ public void merge(LinkedList314<E> other);
+\end{verbatim}
+
+\noindent Examples of calls to \texttt{merge()} (the values shown are \texttt{Integer} objects). The result shown is the new state of \texttt{this}.
+\begin{itemize}
+  \item \texttt{[1].merge([2]) => [1, 2]}
+  \item \texttt{[0, 2, 4].merge([1, 3, 5]) => [0, 1, 2, 3, 4, 5]}
+  \item \begin{verbatim}[1, 2, 7, 9, 10].merge([3, 5, 8, 12]) => [1, 2, 3, 5, 7, 8, 9, 10, 12] \end{verbatim}
+  \item \texttt{[].merge([1, 2, 3]) => [1, 2, 3]}
+\end{itemize}
+
+\vspace{6pt}
+\noindent Recall the \texttt{LinkedList314} implementation from Lecture.
+\begin{verbatim}
+public class LinkedList314<E extends Comparable<? super E>> {
+    private Node<E> first;
+    private Node<E> last;
+    private int size;
+
+    private static class Node<E> {
+        // The nested Nodeclass.
+        private E data;
+        private Node<E> next;
+        public Node(E d) { data = d; }
+    }
+}
+\end{verbatim}
+
+\noindent \textbf{You may not create any new Nodes or other data structures.}
+
+\noindent You may not use any other methods in the LinkedList class unless you implement them yourself.
+\noindent Do not use any other Java classes or methods.
+
+\clearpage
+\begin{verbatim}
+/* Pre: other != null; this, other are sorted; no elements are null
+ * Post: This list will contain all of the elements in this list and other.
+ *       This list will be in sorted order.
+ */
+public void merge(LinkedList314<E> other) {
+  //Update size instance variable  
+  size += other.size;
+
+  Node<E> thisNode = first;
+  Node<E> otherNode = other.first;
+  while(thisNode != null && otherNode != null){
+    int comp = thisNode.data.compareTo(otherNode.data);
+    if(comp <= 0){
+      thisNode = thisNode.next;
+    } else{
+      Node<E> temp = thisNode.next;
+      thisNode.next = otherNode;
+      otherNode.next = temp;
+      otherNode = otherNode.next;
+    }
+  }
+
+  Node<E> restOfList;
+  if(thisNode == null && otherNode != null)
+    restOfList = otherNode;
+  else
+    return;
+
+  //Advance last reference  
+  last.next = otherNode;
+  while(last.next != null)
+    last = last.next;
+
+}
+\end{verbatim}
+\end{document}

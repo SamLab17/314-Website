@@ -1,0 +1,67 @@
+\documentclass[12pt,letter]{article}
+\usepackage{tikz-qtree}
+
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+\noindent\textsc{\large CS 314 Final Review --- Linked List Sums}
+
+\vspace{6pt}
+\noindent\textbf{Linked Lists \& Recursion}
+
+\vspace{2pt}
+\noindent Implement an instance method for the singly-linked \texttt{IntLinkedList} class which changes a nodes value to be the sum of its own value
+plus the value of all subsequent nodes in the list.
+
+\vspace{4pt}
+\noindent Complete the following method.
+\begin{verbatim}
+  // Changes each node's int value to be the sum of itself plus the sum of
+  // all the values which come after it in the list.
+  // pre: size > 0
+  // post: size is unchanged
+  public void addValuesToRight() {
+\end{verbatim}
+
+\vspace{4pt}
+\noindent Here are some example calls to \texttt{addValuesToRight()}:
+\begin{verbatim}
+    [1, 1, 1, 1, 1].addValuesToRight() => [5, 4, 3, 2, 1]
+    [1, 2, 3, 4, 5].addValuesToRight() => [15, 14, 12, 9, 5]
+    [0, 0, 0, 0, 2].addValuesToRight() => [2, 2, 2, 2, 2]
+    [5, 1, 2, 0].addValuesToRight() => [8, 3, 2, 0]
+    [3, 1, 4].addValuesToRight() => [8, 5, 4]
+    [7].addValuesToRight() => [7]
+\end{verbatim}
+
+\vspace{4pt}
+\noindent You may use the following \texttt{IntLinkedList} implementation:
+
+\begin{verbatim}
+  public class IntLinkedList {
+    IntNode first;
+    int size;
+
+    //Nested node class
+    private static class IntNode{
+      IntNode next;
+      int value;
+    }
+  }
+\end{verbatim}
+
+\noindent Your solution should be as efficient as possible in terms of time.
+
+\noindent You may create helper methods.
+
+\noindent \textbf{Do not create any new data structures or use any other Java classes or methods.}
+
+\clearpage
+\begin{verbatim}
+    // Changes each node's int value to be the sum of itself plus the sum of
+    // all the values which come after it in the list.
+    // pre: size > 0
+    // post: size is unchanged
+    public void addValuesToRight() {
+\end{verbatim}
+\end{document}

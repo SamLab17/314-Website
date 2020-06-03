@@ -1,0 +1,65 @@
+\documentclass[12pt,letter]{article}
+
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+\noindent\textsc{\large CS 314 Final Review --- Hash Table Resize}
+
+\vspace{6pt}
+\noindent\textbf{Hash Tables}
+
+\vspace{2pt}
+\noindent Write a private instance method \texttt{resize} for the provided \texttt{HashTable314} class which will double the size of the internal
+array and re-index the elements in the hash table. This hash table implementation uses linked bucket nodes to handle hash collisions. 
+These linked lists are \textbf{not} kept in sorted order. Elements in the hash table are placed in the bucket corresponding to their 
+hash code modulo the length of the array.
+
+\vspace{4pt}
+\noindent Your \texttt{resize} method should also return the magnitude (absolute value) of the largest change in index as a result of the resize.
+For example, if an element was originally at index $1$ in \texttt{con} but after a call to \texttt{resize} its index became $11$, that is a 
+change in index of $10$. Your method will return the largest of these changes.
+
+\vspace{4pt}
+\noindent \emph{This problem is about Hash Tables which use buckets for collisions. If you would like practice with a Hash Table which uses linear probing, 
+look at the last problem on the Spring 2019 final.}
+
+\vspace{4pt}
+
+\begin{verbatim}
+/* Pre: none
+ * Post: con will be twice as large, size is unchanged
+ */
+ private int resize();
+\end{verbatim}
+
+\vspace{6pt}
+\noindent You may use the following \texttt{HashTable314} implementation.
+\begin{verbatim}
+public class HashTable314<E> {
+    private static final int INITIAL_CAPACITY = 10;
+
+    private BucketNode<E>[] con;
+    private int size;
+
+    private static class BucketNode<E> {
+      private E data;
+      private BucketNode<E> next;
+    }
+}
+\end{verbatim}
+
+
+\noindent You may use the absolute value method (\texttt{abs}) from the \texttt{Math} class.
+
+\noindent You may not use or assume any other methods exist in the \texttt{HashTable314} class.
+
+\noindent Do not use any other Java classes or methods.
+
+\clearpage
+\begin{verbatim}
+ /* Pre: none
+  * Post: con will be twice as large, size is unchanged
+  */
+  private int resize(){
+ \end{verbatim}
+\end{document}

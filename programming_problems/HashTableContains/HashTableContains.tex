@@ -1,0 +1,57 @@
+\documentclass[12pt,letter]{article}
+
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+\noindent\textsc{\large CS 314 Final Review --- Hash Table Contains}
+
+\vspace{6pt}
+\noindent\textbf{Hash Tables}
+
+\vspace{2pt}
+\noindent Write an instance method for the provided \texttt{HashTable314} class which will determine whether a given element is present in the table.
+This hash table implementation uses linked list buckets to handle hash collisions. These linked lists are \textbf{not} kept in sorted order.
+Elements in the hash table are placed in the bucket corresponding to their hash code modulo the length of the array.
+
+\vspace{4pt}
+\noindent \emph{This problem is about Hash Tables which use buckets for collisions. If you would like practice with a Hash Table which uses linear probing, 
+revisit the extra section problem from Nov. 25}
+
+\vspace{4pt}
+
+\begin{verbatim}
+/* Pre: val != null
+ * Post: returns true iff val is contained in the hash table.
+ *       The hash table is unchanged as a result of this operation.
+ */
+ public boolean contains(E val);
+\end{verbatim}
+
+\vspace{6pt}
+\noindent You may use the following \texttt{HashTable314} implementation.
+\begin{verbatim}
+public class HashTable314<E> {
+    private static final int INITIAL_CAPACITY = 10;
+
+    private BucketNode<E>[] con;
+    private int size;
+
+    private static class BucketNode<E> {
+      private E data;
+      private BucketNode<E> next;
+    }
+}
+\end{verbatim}
+
+\noindent You may not use or assume any other methods exist in the \texttt{HashTable314} class.
+\noindent Do not use any other Java classes or methods.
+
+\clearpage
+\begin{verbatim}
+  /* Pre: val != null
+  * Post: returns true iff val is contained in the hash table.
+  *       The hash table is unchanged as a result of this operation.
+  */
+  public boolean contains(E val) {
+\end{verbatim}
+\end{document}

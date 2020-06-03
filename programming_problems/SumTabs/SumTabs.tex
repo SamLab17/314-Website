@@ -1,0 +1,51 @@
+\documentclass[12pt,letter]{article}
+
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+\noindent\textsc{\large CS 314 Final Review --- Sum Tabs}
+
+\vspace{6pt}
+\noindent\textbf{Maps}
+
+\vspace{2pt}
+\noindent Implement a method which, given a list of transactions at a certain kind of establishment on Sixth Street,
+returns the total tabs for each customer. The transactions will be passed into this method as a \texttt{List<String>} where
+each string will have the following format: \texttt{<Name> <Cost>} (Name will be a single word, Cost will be a double). 
+Your method will return a \texttt{Map} which maps customers names to their total tab.
+
+\vspace{4pt}
+\noindent Complete the following method.
+\begin{verbatim}
+  // Calculates the total tabs for each customer given a list of transactions
+  // pre: transactions != null
+  // post: A map which maps customer names to their total tab.
+  public static Map<String, Double> sumTabs(List<String> transactions) {
+\end{verbatim}
+
+\vspace{4pt}
+\noindent Here are some example calls to \texttt{sumTabs()}. (The resulting map does not have to be sorted like shown):
+\newline
+
+\noindent \texttt{transactionList1 = ["A 5.50", "B 7.75", "A 7.90", "A 15.30", "B 2.25"]} \newline
+\noindent \texttt{sumTabs(transactionList1).toString()} $\rightarrow$ \texttt{\{A=10.0, B=28.7\}} \newline
+
+\noindent \texttt{transactionList2 = ["A 1.25", "B 10.15", "C 8.25", "D 7.00"]} \newline
+\noindent \texttt{sumTabs(transactionList1).toString()} $\rightarrow$ \texttt{\{A=1.25, B=10.15, C=8.25, D=7.0\}} \newline
+
+\noindent You may create a \texttt{TreeMap} or \texttt{HashMap}. 
+
+\noindent You may also use the Java \texttt{Scanner} class's constructor, \texttt{next()}, and \texttt{nextDouble()} methods,
+or any \texttt{String} methods and the Double class's \texttt{parseDouble()} method. \newline
+
+\noindent \textbf{Do not use any other Java classes or methods.}
+
+\clearpage
+\begin{verbatim}
+  // Calculates the total tabs for each customer given a list of transactions
+  // pre: transactions != null
+  // post: A map which maps customer names to their total tab.
+  public static Map<String, Double> sumTabs(List<String> transactions) {
+
+\end{verbatim}
+\end{document}

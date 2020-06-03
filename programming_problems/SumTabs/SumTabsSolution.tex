@@ -1,0 +1,79 @@
+\documentclass[12pt,letter]{article}
+
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+\noindent\textsc{\large CS 314 Final Review --- Sum Tabs --- \textbf{Solution}}
+
+\vspace{6pt}
+\noindent\textbf{Maps}
+
+\vspace{2pt}
+\noindent Implement a method which, given a list of transactions at a certain kind of establishment on Sixth Street,
+returns the total tabs for each customer. The transactions will be passed into this method as a \texttt{List<String>} where
+each string will have the following format: \texttt{<Name> <Cost>} (Name will be a single word, Cost will be a double). 
+Your method will return a \texttt{Map} which maps customers names to their total tab.
+
+\vspace{4pt}
+\noindent Complete the following method.
+\begin{verbatim}
+  // Calculates the total tabs for each customer given a list of transactions
+  // pre: transactions != null
+  // post: A map which maps customer names to their total tab.
+  public static Map<String, Double> sumTabs(List<String> transactions) {
+\end{verbatim}
+
+\vspace{4pt}
+\noindent Here are some example calls to \texttt{sumTabs()}. (The resulting map does not have to be sorted like shown):
+\newline
+
+\noindent \texttt{transactionList1 = ["A 5.50", "B 7.75", "A 7.90", "A 15.30", "B 2.25"]} \newline
+\noindent \texttt{sumTabs(transactionList1).toString()} $\rightarrow$ \texttt{\{A=10.0, B=28.7\}} \newline
+
+\noindent \texttt{transactionList2 = ["A 1.25", "B 10.15", "C 8.25", "D 7.00"]} \newline
+\noindent \texttt{sumTabs(transactionList1).toString()} $\rightarrow$ \texttt{\{A=1.25, B=10.15, C=8.25, D=7.0\}} \newline
+
+\noindent You may create a \texttt{TreeMap} or \texttt{HashMap}. 
+
+\noindent You may also use the Java \texttt{Scanner} class's constructor, \texttt{next()}, and \texttt{nextDouble()} methods,
+or any \texttt{String} methods and the Double class's \texttt{parseDouble()} method. \newline
+
+\noindent \textbf{Do not use any other Java classes or methods.}
+
+\clearpage
+\begin{verbatim}
+  // Calculates the total tabs for each customer given a list of transactions
+  // pre: transactions != null
+  // post: A map which maps customer names to their total tab.
+  public static Map<String, Double> sumTabs(List<String> transactions) {
+    HashMap<String, Double> result = new HashMap<>();
+    for(String s : transactions){
+        Scanner scan = new Scanner(s);
+        String name = scan.next();
+        double cost = scan.nextDouble();
+        if(!result.containsKey(name))
+            result.put(name, cost);
+        else
+            result.put(name, result.get(name) + cost);
+    }
+    return result;
+  }
+\end{verbatim}
+
+\vspace{4pt}
+\noindent This is a very straightforward map problem. Basically, we want to go transaction by transaction, parse it, and update the map.
+If it's the first time we've seen this customer's name, then we put a new entry in the map with the cost from the string. If 
+we've seen the customer before, then we update their entry in the map. \newline
+
+\noindent Many students in the past have made the following mistake when updating values in maps.
+\begin{verbatim}
+  if(result.containsKey(name))
+    result.get(name) += cost;
+\end{verbatim}
+The above code does not actually change the value associated with \texttt{name} in the map. Instead, it "gets" the value from the map associated
+with \texttt{name} which is of type Integer. Then, seeing that the \texttt{+=} operator is being applied to this Integer object, the object
+is automatically un-boxed into a primitive \texttt{int} and then \texttt{cost} is added to its value. However, the primitive \texttt{int}
+is never re-boxed into an Integer nor is it re-inserted into the map. Also, Integer objects are immutable so the only way to change
+the Integer value associated with \texttt{name} is to change the reference. \newline
+
+\end{document}

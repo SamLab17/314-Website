@@ -1,0 +1,80 @@
+\documentclass[12pt,letter]{article}
+
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+\noindent\textsc{\large CS 314 Exam One Review --- Sorted List Insert --- \textbf{Solution}}
+
+\vspace{6pt}
+\noindent\textbf{Array-based Lists}
+
+\vspace{2pt}
+\noindent Recall the \texttt{SortedIntList} class we developed in lecture before we developed
+the \texttt{GenericList}. Write an instance method for the \texttt{SortedIntList} class which inserts
+an element into the list. The list must be in sorted order before and after this operation.
+
+\vspace{4pt}
+\noindent Complete the following method.
+\begin{verbatim}
+  // Adds an element to this list
+  // pre: val != null, con is sorted from 0 to size - 1
+  // post: val is inserted at the correct place in the list
+  public void insert(int val)
+\end{verbatim}
+
+\vspace{4pt}
+
+\noindent Here are some example calls to \texttt{insert()}:
+\newline
+\noindent \texttt{[2, 3, 4, 5].insert(1)} $\rightarrow$ \texttt{[1, 2, 3, 4, 5]}
+\newline
+\noindent \texttt{[1, 2, 4, 5].insert(3)} $\rightarrow$ \texttt{[1, 2, 3, 4, 5]}
+\newline
+\noindent \texttt{[].insert(7)} $\rightarrow$ \texttt{[7]}
+\newline
+\noindent \texttt{[1, 2, 3].insert(4)} $\rightarrow$ \texttt{[1, 2, 3, 4]}
+\newline
+
+\noindent Your method will be in the following \texttt{SortedIntList} class:
+
+\begin{verbatim}
+  public class SortedIntList{
+    private int size;
+    private int[] con;
+    // ...
+  }
+
+\end{verbatim}
+
+\noindent \textbf{Do not use or assume there are any provided methods in the SortedIntList class.}
+
+\noindent \textbf{Do not use any other Java classes or methods.}
+
+\clearpage
+\begin{verbatim}
+    // Adds an element to this list
+    // pre: val != null, con is sorted from 0 to size - 1
+    // post: val is inserted at the correct place in the list
+    public void insert(int val) {
+        if(con.length == size){
+            int[] newCon = new int[con.length * 2 + 1];
+            for(int i = 0; i < con.length; i++)
+                newCon[i] = con[i];
+            con = newCon;
+        }
+        //Find which index we're going to add val
+        int index = 0;
+        while(index < size && con[index] < val)
+            index++;
+
+        //Shift everything to the right of the index
+        for(int i = size; i > index; i--){
+            con[i] = con[i-1];
+        }
+
+        //Put val in its place
+        con[index] = val;
+        size++;
+    }
+\end{verbatim}
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass[12pt,letter]{article}
+
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+\noindent\textsc{\large CS 314 Final Review --- Binary Search Trees}
+
+\vspace{6pt}
+\noindent\textbf{Verify a Binary Search Tree}
+
+\vspace{2pt}
+\noindent Suppose we were given an implementation of a BinarySearchTree but were doubtful of its correctness.
+Let's write an instance method for a BinarySearchTree class which will verify if \texttt{this} is a valid BinarySearchTree.
+
+\vspace{4pt}
+
+\noindent You will need to ensure that all nodes in \texttt{this} follows the BinarySearchTree rule that, for any given node, all nodes' values in its 
+left subtree are less than the node's value and all nodes' values in its right subtree is greater than the node's value. Also, make sure
+that the \texttt{size} instance variable correctly stores the number of nodes in the tree.
+
+\vspace{4pt}
+\noindent Complete the following method.
+\begin{verbatim}
+  // pre: none
+  // post: returns true iff the BST is valid
+  //       this object is unaltered as a result of this call
+  public boolean verifyBST() {
+\end{verbatim}
+
+\vspace{4pt}
+
+\noindent Here are some sample calls to \texttt{isSubtree}: \newline
+
+\vspace{4pt}
+\noindent You may use the following \texttt{BinarySearchTree} implementation
+
+\begin{verbatim}
+  public class BinarySearchTree<E extends Comparable<? super E>>{
+    private BSTNode<E> root;
+    private int size;
+
+    private static class BSTNode<E extends Comparable<? super E>>{
+      private E data;
+      private BSTNode left, right;
+    }
+  }
+\end{verbatim}
+
+\noindent You may create a single int array of size 1.
+
+\noindent \textbf{Do not create any other data structures or use any other Java classes or methods.}
+
+\clearpage
+\begin{verbatim}
+  // pre: none
+  // post: returns true iff the BST is valid
+  //       this object is unaltered as a result of this call
+  public boolean verifyBST() {
+\end{verbatim}
+\end{document}

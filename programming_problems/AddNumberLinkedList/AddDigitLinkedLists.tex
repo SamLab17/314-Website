@@ -1,0 +1,65 @@
+\documentclass[12pt,letter]{article}
+
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+\noindent\textsc{\large CS 314 Final Review --- Add to Digits LinkedList}
+
+\vspace{6pt}
+\noindent\textbf{Linked Lists}
+
+\vspace{2pt}
+\noindent Suppose you are given a LinkedList where each node represents a digit in a positive integer. The head of the list holds the most significant digit
+of the number while the tail of the list holds the least significant. This list of digits will be represented using the \texttt{DigitLinkedList} class.
+
+\vspace{2pt}
+\noindent Write an instance method called \texttt{addValue} for the \texttt{DigitLinkedList} class which will add an arbitrary, 
+positive integer to the number represented by the list.
+
+\vspace{2pt}
+\noindent It is guaranteed that \texttt{this} is in a valid state when \texttt{addValue()} is called. This means that each \texttt{DigitNode}'s value will
+be between 0 and 9 inclusive. It also means that \texttt{first != null} (if the list stores the the value zero, then it would have a single \texttt{DigitNode} with
+a \texttt{digit} value of 0).
+
+\noindent Examples of calls to \texttt{addValue()}. The result shown is the new state of \texttt{this}.
+\begin{itemize}
+  \item \texttt{[3, 1, 1].addValue(3) => [3, 1, 4]}
+  \item \texttt{[3, 1, 1].addValue(20) => [3, 3, 1]}
+  \item \texttt{[4, 2, 9].addValue(10) => [4, 3, 9]}
+  \item \texttt{[0].addValue(408) => [4, 0, 8]}
+  \item \texttt{[1, 1].addValue(303) => [3, 1, 4]}
+\end{itemize}
+
+\vspace{6pt}
+\noindent Use the follwing \texttt{DigitLinkedList} implementation.
+\begin{verbatim}
+public class DigitLinkedList {
+    private DigitNode first;
+
+    private static class DigitNode {
+        // The nested DigitNode class.
+        private int digit;
+        private DigitNode next;
+        private DigitNode(int d, DigitNode n){
+          digit = d;
+          next = n;
+        }
+    }
+}
+\end{verbatim}
+
+\noindent You may create new \texttt{DigitNode} objects using the provided constructor.
+
+\noindent \textbf{You may not create any other data structures.}
+
+\noindent Do not use any other Java classes or methods.
+
+\clearpage
+\begin{verbatim}
+/* Pre:  val >= 0; this list is in a valid state -> first != null
+ * Post: this list will represent the sum of the previous state + val
+ *       this list will still be in a valid state
+ */
+ public void addValue(int val){
+\end{verbatim}
+\end{document}

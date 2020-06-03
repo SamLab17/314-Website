@@ -1,0 +1,61 @@
+\documentclass[12pt,letter]{article}
+
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+\noindent\textsc{\large CS 314 Final Review --- Most Frequent Element}
+
+\vspace{6pt}
+\noindent\textbf{Maps}
+
+\vspace{2pt}
+\noindent Implement an instance method which, for a given list of elements returns the element which appears in the list the most frequently. 
+This is also known as the \emph{mode}. This method will be a part of the \texttt{List314} class, 
+an array-based list similar to the one created in lecture. Return the element in the list which is 
+present most often, if there is a tie, return the element which occurs first in the list.
+The list will not be altered as a result of this call.
+
+\vspace{4pt}
+\noindent Complete the following method.
+\begin{verbatim}
+  // Returns the most frequent element in the list
+  // pre: list != null, list.size() > 0
+  // post: returns the most frequent element, list is unchanged
+  public E mostFrequent()
+\end{verbatim}
+
+\vspace{4pt}
+\noindent Here are some example calls to \texttt{mostFrequent()}:
+\newline
+\noindent \texttt{["A", "A", "B", "A", "B"].mostFrequent())} $\rightarrow$ \texttt{"A"}
+\newline
+\noindent \texttt{["A", "B", "C", "A", "B", "A", "BB"].mostFrequent()} $\rightarrow$ \texttt{"A"}
+\newline
+\noindent \texttt{[1, 2, 3, 2, 1].mostFrequent()} $\rightarrow$ \texttt{1}
+\newline
+\noindent \texttt{[3, 1, 4].mostFrequent()} $\rightarrow$ \texttt{3}
+\newline
+
+\noindent Your method will be in the following \texttt{List314} class:
+
+\begin{verbatim}
+  public class List314<E>{
+    private int size;
+    private E[] con;
+    // ...
+  }
+
+\end{verbatim}
+
+\noindent You may create a \texttt{TreeMap} or \texttt{HashMap}. 
+\newline
+\noindent \textbf{Do not use any other Java classes or methods.}
+
+\clearpage
+\begin{verbatim}
+  // Returns the most frequent element in the list
+  // pre: list != null, list.size() > 0
+  // post: returns the most frequent element, list is unchanged
+  public E mostFrequent() {
+\end{verbatim}
+\end{document}
