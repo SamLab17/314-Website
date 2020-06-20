@@ -2,6 +2,7 @@
 title: "Amortized Analysis"
 date: 2020-05-16T19:31:31-05:00
 draft: false
+weight: 20
 ---
 
 

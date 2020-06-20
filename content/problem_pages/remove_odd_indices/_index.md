@@ -4,7 +4,7 @@ title: Remove Odd Indices
 
 # Remove Odd Indices
 
-Difficulty: Easy
+Difficulty: Medium
 
 [Problem Link](RemoveOddIndices.pdf)
 

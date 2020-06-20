@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Identities to Know #  Here is a list of some important identities and properties to know for CS314 (especially for exams).
+Powers of 2 Approximations #  $$ \begin{aligned} \log_2{(1,000)} &amp;\approx 10 &amp; 2^{10} &amp; \approx 1,000 \\ \log_2{(1,000,000)} &amp;\approx 20 &amp; 2^{20} &amp; \approx 1,000,000 \end{aligned} $$
+Logarithm Product &amp; Quotient Rules #  $$ \log{(ab)} = \log{a} &#43; \log{b} $$ $$ \log{\left(\frac{a}{b}\right)} = \log{a} - \log{b} $$">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Identities to Know" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.cs.utexas.edu/~slaberge/docs/topics/identities/" />
+
+<title>Identities to Know | Sam&#39;s CS314 Site</title>
+<link rel="manifest" href="/~slaberge/manifest.json">
+<link rel="icon" href="/~slaberge/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/~slaberge/book.min.034944dbf27e1a87c17b9e34e633e5b26be61f59ea09216021609ba7f015c6f0.css" integrity="sha256-A0lE2/J&#43;GofBe5405jPlsmvmH1nqCSFgIWCbp/AVxvA=">
+<script defer src="/~slaberge/en.search.min.6e50f128c4239ab372a9d216f9edb5ae8664d00aa2270bd92e6eed69b19a0bf1.js" integrity="sha256-blDxKMQjmrNyqdIW&#43;e21roZk0AqiJwvZLm7tabGaC/E="></script>
+<link rel="alternate" type="application/rss+xml" href="https://www.cs.utexas.edu/~slaberge/docs/topics/identities/index.xml" title="Sam's CS314 Site" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/~slaberge"><span>Sam&#39;s CS314 Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Topics</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/topics/identities/" class="active">Identities to Know</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/topics/amortized/" class="">Amortized Analysis</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/topics/amortized/dynamic_arrays/" class="">Dynamic Arrays</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <a href="/~slaberge/docs/lab_machines/" class="">CS Lab Machines</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <span>Getting Connected</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/vpn/" class="">The UT VPN</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/ssh/" class="">Connecting with SSH</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/ssh/keys/" class="">SSH Keys</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <span>Using the Lab Machines</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/tutorials/transferring/" class="">Transferring Files</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/tutorials/linux/" class="">Linux Basics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/tutorials/java/" class="">Running Java Programs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/lab_machines/tutorials/gui/" class="">Running GUI Programs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <span>Exam Review</span>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/~slaberge/docs/exam_review/practice_questions/" class="collapsed ">Programming Problems</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/~slaberge/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Identities to Know</strong>
+
+  <label for="toc-control">
+    
+    <img src="/~slaberge/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#powers-of-2-approximations">Powers of 2 Approximations</a></li>
+    <li><a href="#logarithm-product--quotient-rules">Logarithm Product &amp; Quotient Rules</a></li>
+    <li><a href="#sum-of-consecutive-integers">Sum of Consecutive Integers</a></li>
+    <li><a href="#sum-of-powers-of-two">Sum of Powers of Two</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="identities-to-know">
+  Identities to Know
+  <a class="anchor" href="#identities-to-know">#</a>
+</h1>
+<p>Here is a list of some important identities and properties to know for
+CS314 (especially for exams).</p>
+<h2 id="powers-of-2-approximations">
+  Powers of 2 Approximations
+  <a class="anchor" href="#powers-of-2-approximations">#</a>
+</h2>
+<p>$$
+\begin{aligned}
+\log_2{(1,000)} &amp;\approx 10 &amp; 2^{10} &amp; \approx 1,000 \\ \log_2{(1,000,000)} &amp;\approx 20 &amp; 2^{20} &amp; \approx 1,000,000
+\end{aligned}
+$$</p>
+<h2 id="logarithm-product--quotient-rules">
+  Logarithm Product &amp; Quotient Rules
+  <a class="anchor" href="#logarithm-product--quotient-rules">#</a>
+</h2>
+<p>$$
+\log{(ab)} = \log{a} + \log{b}
+$$
+$$
+\log{\left(\frac{a}{b}\right)} = \log{a} - \log{b}
+$$</p>
+<h2 id="sum-of-consecutive-integers">
+  Sum of Consecutive Integers
+  <a class="anchor" href="#sum-of-consecutive-integers">#</a>
+</h2>
+<p>$$
+1 + 2 + 3 + 4 + &hellip; + N = \frac{N(N+1)}{2}
+$$</p>
+<details >
+  <summary>Proof by Induction</summary>
+  <div class="markdown-inner">
+    <p>Let&rsquo;s prove \( \sum_{i = 1}^{N}{i} = \frac{N(N+1)}{2} \) by induction.</p>
+<p>First, let&rsquo;s ensure the property holds for the base case \( N = 1 \):</p>
+<p>$$
+1 \stackrel{?}{=} \frac{1(1 + 1)}{2} = \frac{2}{2} = 1
+$$</p>
+<p>Now, let&rsquo;s assume that the property when \(N = k\) where \(k \) is some
+integer \( \geq 1 \). This our inductive hypothesis:</p>
+<p>$$
+\sum_{i = 1}^{k}{i} = \frac{k(k+1)}{2}
+$$</p>
+<p>Now, let&rsquo;s see if the property also holds for \(k+1\). From the property,
+we would expect to see that \( \sum_{i=1}^{k+1}{i} = \frac{(k+1)(k+2)}{2} \).</p>
+<p>$$
+1 + 2 + 3 + &hellip; + k + (k+1) = \sum_{i = 1}^{k}{i} + (k+1) = \frac{k(k+1)}{2} + (k+1)
+$$</p>
+<p>$$
+= \frac{k^2 + k}{2} + \frac{2(k+1)}{2} = \frac{k^2 + 3k + 2}{2}
+= \frac{(k+1)(k+2)}{2} \quad \square
+$$</p>
+<p>Which is the answer we would expect from the property.</p>
+
+  </div>
+</details>
+
+<details >
+  <summary>Geomteric Visualization</summary>
+  <div class="markdown-inner">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://player.vimeo.com/video/431085110" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="Visualization" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+ </div>
+
+  </div>
+</details>
+
+<h2 id="sum-of-powers-of-two">
+  Sum of Powers of Two
+  <a class="anchor" href="#sum-of-powers-of-two">#</a>
+</h2>
+<p>$$
+1 + 2 + 4 + 8 + &hellip; + N = 2N - 1
+$$</p>
+<p>(Where \( N \) is a power of \(2 \))</p>
+<details >
+  <summary>Proof by Induction</summary>
+  <div class="markdown-inner">
+    <p>To prove this property, I&rsquo;m going to rewrite the sum slightly. Let
+\( n = \log_2{N} \), i.e. \( 2^n = N \).</p>
+<p>$$
+1 + 2 + 4 + 8 + &hellip; + 2^n = 2N - 1 = 2(2^n) - 1 = 2^{n+1} - 1
+$$</p>
+<p>Let&rsquo;s ensure that the property holds for the base case where \( n = 0 \):</p>
+<p>$$
+1 \stackrel{?}{=} 2^{0 + 1} - 1 = 1
+$$</p>
+<p>Now, we make our inductive hypothesis. Let&rsquo;s assume the property holds for
+\(n = k\) where \(k \) is an integer \( \geq 0\). We take the following
+to be true:</p>
+<p>$$
+1 + 2 + 4 + &hellip; + 2^k = 2^{k+1} - 1
+$$</p>
+<p>Now, let&rsquo;s see if, given that the inductive hypothesis is true, the property holds
+for \(n = k+1\). Based on the property, we would expect the sum up to
+\(2^{k+1}\) to equal \(2^{k+2} - 1 \).</p>
+<p>$$
+1 + 2 + 4 + &hellip; + 2^k + 2^{k+1} = \left( 2^{k+1} - 1\right) + 2^{k+1}
+$$</p>
+<p>$$
+= 2 \left(2^{k+1} \right) - 1 = 2^{k+2} - 1 \quad \square
+$$</p>
+
+  </div>
+</details>
+
+
+<link rel="stylesheet" href="/~slaberge/katex/katex.min.css" />
+<script defer src="/~slaberge/katex/katex.min.js"></script>
+<script defer src="/~slaberge/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+  \(\)
+</span>
+
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#powers-of-2-approximations">Powers of 2 Approximations</a></li>
+    <li><a href="#logarithm-product--quotient-rules">Logarithm Product &amp; Quotient Rules</a></li>
+    <li><a href="#sum-of-consecutive-integers">Sum of Consecutive Integers</a></li>
+    <li><a href="#sum-of-powers-of-two">Sum of Powers of Two</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

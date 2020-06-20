@@ -16,6 +16,10 @@
   </url>
   
   <url>
+    <loc>https://www.cs.utexas.edu/~slaberge/docs/topics/identities/</loc>
+  </url>
+  
+  <url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/exam_review/practice_questions/topics/</loc>
   </url>
   
@@ -25,6 +29,11 @@
   
   <url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/tutorials/transferring/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.cs.utexas.edu/~slaberge/docs/topics/amortized/</loc>
+    <lastmod>2020-05-16T19:31:31-05:00</lastmod>
   </url>
   
   <url>
@@ -57,11 +66,6 @@
   
   <url>
     <loc>https://www.cs.utexas.edu/~slaberge/</loc>
-    <lastmod>2020-05-16T19:31:31-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.cs.utexas.edu/~slaberge/docs/topics/amortized/</loc>
     <lastmod>2020-05-16T19:31:31-05:00</lastmod>
   </url>
   
