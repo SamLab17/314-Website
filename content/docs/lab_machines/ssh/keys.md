@@ -50,7 +50,7 @@ You will then be prompted to confirm your passphrase.
 
 The output should look similar to below.
 
-![SSH Key output](Images/SSHKey.png)
+![SSH Key output](/~slaberge/ssh_images/SSHKey.png)
 
 By default, the public key is stored in a file called `id_rsa.pub`.
 On macOS/Linux this file is in the hidden directory called `.ssh` in
