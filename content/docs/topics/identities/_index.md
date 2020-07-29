@@ -31,6 +31,30 @@ $$
 1 + 2 + 3 + 4 + ... + N = \frac{N(N+1)}{2}
 $$
 
+{{<details "By Arithmetic">}}
+
+$$
+\text{Let } S_{N} = 1 + 2 + ... + (N-1) + N
+$$
+
+Now add \\(S_{N} \\) with itself but reverse the order of the terms.
+
+$$
+\hspace{4pt} S_{N} = 1 + 2 + ... + (N-1) + N
+$$
+
+$$
+\+ \frac{S_{N} = N + (N-1) + ... + 2 + 1}{2S_{N} = (N+1) + (N+1) + ... + (N+1)}
+$$
+
+This gives us \\(N\\) number of \\((N+1)\\) terms. Dividing by two on both sides:
+
+$$
+2S_{N} = N(N+1) \rightarrow S_{N} = \frac{N(N+1)}{2}
+$$
+
+{{</details>}}
+
 {{<details "Proof by Induction">}}
 
 Let's prove \\( \sum_{i = 1}^{N}{i} = \frac{N(N+1)}{2} \\) by induction.
