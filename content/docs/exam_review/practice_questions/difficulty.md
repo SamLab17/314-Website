@@ -16,6 +16,9 @@ weight: 20
 
 [Hash Table Contains](/~slaberge/problem_pages/hash_table_contains)
 
+[Maximum In-Degree](/~slaberge/problem_pages/maximum_indegree)
+
+
 ## Medium
 
 [Remove Odd Indices](/~slaberge/problem_pages/remove_odd_indices)
@@ -33,6 +36,7 @@ weight: 20
 [Hash Set Difference](/~slaberge/problem_pages/hash_set_difference)
 
 [Hash Table Resize](/~slaberge/problem_pages/hash_table_resize)
+
 
 ## Hard
 

@@ -1,0 +1,60 @@
+\documentclass[12pt,letter]{article}
+
+\usepackage[margin=1.0in]{geometry}
+
+\begin{document}
+\noindent\textsc{\large CS 314 Final Review --- Maximum In-Degree}
+
+\vspace{6pt}
+\noindent\textbf{Graphs}
+
+\vspace{2pt}
+\noindent Write an instance method for the provided \texttt{Graph} class which finds the
+maximum in-degree out of all the vertices in the graph. The in-degree of a vertex
+is the number of edges which are directed into it.
+
+\vspace{4pt} 
+\noindent The graph for this problem is directed and stored using adjacency lists.
+
+\vspace{6pt}
+\noindent Complete the following instance method.
+\begin{verbatim}
+  // Finds the maximum in-degree in the graph
+  // pre: vertices.size() > 0
+  // post: the structure of the graph is not altered by this operation
+  public int maxInDegree() {
+\end{verbatim}
+
+\vspace{4pt}
+\noindent Use the following Graph implementation.
+
+\begin{verbatim}
+  public class Graph {
+    // The vertices in the graph.
+    private Map<String, Vertex> vertices;
+
+    // Sets scratch to 0 for all vertices
+    private void clearAll(){ /* ... */ }
+
+    private static class Vertex {
+      private String name;
+      private List<Edge> adjacent;
+      private int scratch;
+    }
+
+    private static class Edge {
+      private Vertex dest;
+    }    
+
+  }
+\end{verbatim}
+
+\noindent \textbf{You may not create any new data structures. \newline Do not use any other Java classes or methods.}
+
+\clearpage
+\begin{verbatim}
+  // Finds the maximum in-degree in the graph
+  // pre: vertices.size() > 0
+  // post: the structure of the graph is not altered by this operation
+  public int maxInDegree() {\end{verbatim}
+ \end{document}

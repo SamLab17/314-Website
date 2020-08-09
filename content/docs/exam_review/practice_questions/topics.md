@@ -48,4 +48,6 @@ weight: 10
 
 ## Graphs
 
+[Maximum In-Degree](/~slaberge/problem_pages/maximum_indegree)
+
 [Bipartite Graphs](/~slaberge/problem_pages/bipartite_graphs)
