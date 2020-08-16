@@ -1,0 +1,39 @@
+/* You can add custom styles here. */
+
+// @import "plugins/numbered";
+
+.hidden-link {
+
+    &:link,
+    &:hover,
+    &:active,
+    &:visited {
+        text-decoration: none !important;
+        color: inherit !important;
+        cursor: default !important;
+    }
+}
+
+
+.about-me-section {
+    overflow: auto;
+    display: flex;
+}
+
+.about-text {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.about-picture {
+    float: right;
+    max-width: 30%;
+    order: 99;
+    justify-content: space-around;
+    figcaption {
+        color: #aaa;
+        font-size: 75%;
+        text-align: center;
+    }
+}
