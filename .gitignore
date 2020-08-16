@@ -1,0 +1,5 @@
+programming_problems/**/*.aux
+programming_problems/**/*.fdb_latexmk
+programming_problems/**/*.fls
+programming_problems/**/*.log
+programming_problems/**/*.synctex.gz
