@@ -7,7 +7,6 @@ type: docs
 
 <div class="hello">
 
-
 </div>
 
 <h2 class="hello-mobile"> <a class="hidden-link" href="https://thumbs.gfycat.com/TangibleBareCopperbutterfly-size_restricted.gif">
