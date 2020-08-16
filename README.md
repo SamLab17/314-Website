@@ -3,6 +3,8 @@
 This website has tutorials and extra study materials for
 students in [CS314](https://www.cs.utexas.edu/~scottm/cs314/index.htm).
 
+The website is hosted at [https://www.cs.utexas.edu/~slaberge](https://www.cs.utexas.edu/~slaberge)
+
 ## Hugo Site Generator
 
 This website was made with the [Hugo](https://gohugo.io/) 
@@ -30,3 +32,19 @@ choco install hugo-extended -confirm
 ```
 brew install hugo
 ```
+
+## Live Server
+
+To run a local debug server for the site, run:
+```
+hugo server
+```
+
+## Building the Site
+
+To build the site, simply run:
+```
+hugo
+```
+
+in the repo root directory. The built website files are in the `public` directory.
