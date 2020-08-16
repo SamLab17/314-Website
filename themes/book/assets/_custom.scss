@@ -21,20 +21,45 @@
     display: flex;
 }
 
+
+
 .about-text {
     margin-top: auto;
     margin-bottom: auto;
     text-align: center;
 }
 
+.hello-mobile {
+    text-align: center;
+    display: none;
+}
+
 .about-picture {
     float: right;
     max-width: 30%;
     order: 99;
-    justify-content: space-around;
+    justify-content: space-between;
     figcaption {
         color: #aaa;
         font-size: 75%;
         text-align: center;
+    }
+}
+@media(max-width: 600px) {
+    .about-me-section {
+        display: block;
+    }
+
+    .about-picture {
+        float: none;
+        max-width: 90%;
+    }
+
+    .hello-mobile {
+        display: block;
+    }
+
+    .hello-desktop {
+        display: none;
     }
 }

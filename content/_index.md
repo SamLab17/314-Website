@@ -4,12 +4,20 @@ type: docs
 ---
 
 <div class="about-me-section" >
-{{< figure src="/~slaberge/me.jpg" caption="(I don't normally dress this fancy, this is after an orchestra concert)" alt="Picture of me" class="about-picture">}}
+
+<div class="hello">
+
+
+</div>
+
+<h2 class="hello-mobile"> <a class="hidden-link" href="https://thumbs.gfycat.com/TangibleBareCopperbutterfly-size_restricted.gif">
+    Hello There</a>, I'm Sam!</h2>
+
+{{< figure src="/~slaberge/me.jpg" caption="(I don't normally dress this fancy, this was after an orchestra concert)" alt="Picture of me" class="about-picture">}}
 
 <div class="about-text">
-<h2>
-<a class="hidden-link" 
-    href="https://thumbs.gfycat.com/TangibleBareCopperbutterfly-size_restricted.gif">
+
+<h2 class="hello-desktop"> <a class="hidden-link" href="https://thumbs.gfycat.com/TangibleBareCopperbutterfly-size_restricted.gif">
     Hello There</a>, I'm Sam!</h2>
 
 I'm a third-year CS student and a TA for 
