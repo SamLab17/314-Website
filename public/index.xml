@@ -70,8 +70,8 @@ Below are some graphical applications for all operating systems which support SF
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/ssh/</guid>
-      <description>Connecting with SSH #  We will connect to the Lab Machines using a protocol called SSH (for Secure Shell). It will allow us to remotely access a machine&amp;rsquo;s command line.
-Prerequisites #   Make sure you know your CS account username and password Find an available CS machine to connect to with this link If off-campus, make sure you are connected to the VPN or have set up SSH keys  The SSH Command #  Firstly, you&amp;rsquo;ll need to open your terminal application of choice.</description>
+      <description>Connecting with SSH #  We will connect to the Lab Machines using a protocol called SSH (for Secure Shell). SSH allows us to use a computer remotely by sending commands to it and then receiving the resulting output. For CS314, this means you will be able to run and test your assignments on the lab machines.
+Prerequisites #   Make sure you know your CS account username and password Find an available CS machine to connect to with this link If off-campus, make sure you are connected to the VPN or have set up your SSH keys  The SSH Command #  Firstly, you&amp;rsquo;ll need to open your terminal application of choice.</description>
     </item>
     
     <item>

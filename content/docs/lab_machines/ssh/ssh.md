@@ -6,14 +6,16 @@ weight: 20
 # Connecting with SSH
 
 We will connect to the Lab Machines using a protocol called
-SSH (for **S**ecure **Sh**ell). It will allow us to remotely
-access a machine's command line.
+SSH (for **S**ecure **Sh**ell). SSH allows us to use a computer
+remotely by sending commands to it and then receiving the resulting
+output. For CS314, this means you will be able to run and test your assignments
+on the lab machines.
 
 ## Prerequisites
 
 * Make sure you know your CS account username and password
 * Find an available CS machine to connect to with [this link](https://apps.cs.utexas.edu/unixlabstatus/)
-* If off-campus, make sure you are connected to the VPN or have set up SSH keys
+* If off-campus, make sure you are connected to the [VPN](../vpn) or have set up your [SSH keys](../keys/)
 
 ## The SSH Command
 
@@ -34,7 +36,7 @@ one of the UTCS Lab machines:
 ssh <CS Username>@<Machine Name>.cs.utexas.edu
 ```
 
-My username is `slaberge` and I am connecting to the
+My username is `slaberge` and I'll be connecting to the
 `aggravation` machine. So the command I'll use looks like:
 
 ```bash
@@ -58,7 +60,15 @@ you may need to enable it. Try following
 
 ![Linux Prompt](/~slaberge/ssh_images/Terminal2.png)
 
-The prompt you see will most likely not look like the one above, but if you see the name of the machine you connected to in the prompt, then you successfully connected!
+The prompt you see will not look exactly like the one above, but if you see the name 
+of the machine you connected to in the prompt, then you successfully connected!
 
-If you got an error, first make sure you entered the command correctly.
-You can use the up arrow to fill in the prompt with the previous command in your history.
+## Once Connected
+
+**All commands that you run from now on are actually being executed on the lab machine, not your personal computer.**
+The output of the commands is then sent back to your computer for you to see them.
+
+To disconnect and end the SSH session, simply enter the following command:
+```
+logout
+```
