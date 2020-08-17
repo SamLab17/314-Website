@@ -1,6 +1,6 @@
 ---
 title: Problems by Difficulty
-description: "Programming problems sorted by their 'difficulty'"
+description: "Programming problems sorted by their difficulty*"
 weight: 20
 ---
 

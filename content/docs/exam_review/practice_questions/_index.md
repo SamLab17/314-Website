@@ -18,3 +18,7 @@ looking at the past exams will always be more representative of what you can
 expect to see on future exams.
 
 {{<section>}}
+
+<div class="disclaimer">
+* Just a rough estimate, perception of difficulty varies for everybody.
+</div>
