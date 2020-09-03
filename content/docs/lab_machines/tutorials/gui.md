@@ -43,8 +43,9 @@ echo x > \dev\tty
 
 ## Every-Time Setup
 
-Make sure that Xming is running (it will be in the system tray when running).
-Then, when connecting to the lab machine, you'll need to add an extra argument
+Make sure that Xming is running (it will be in the system tray when running) and
+run the following three commands in the command prompt.
+When connecting to the lab machine, you'll need to add an extra argument
 to the `ssh` command:
 
 ```
@@ -62,6 +63,17 @@ ssh -Y CS_USER@CS_MACHINE.cs.utexas.edu
 macOS does not have a built-in X-Windows server so we'll need to 
 install one. XQuartz is free, open source and a popular option for macOS.
 You can download the installer [here](https://www.xquartz.org).
+
+Next, we need to tell `ssh` where to find `xauth`, another program which
+will allow us to set up a _secure_ X-Windows connection. All this means for you
+is you need to add the following line in the `~/.ssh/config` file on your local
+machine:
+
+```
+XAuthLocation /opt/X11/bin/xauth
+```
+
+You should now be ready to get connected!
 
 ## Every-Time Setup
 
