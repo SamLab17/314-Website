@@ -14,5 +14,8 @@ weight: 10
 ## October 5, 2020
 [Slides Download](FifthDiscussionSection.pdf)
 
+## October 19, 2020
+[Slides Download](SixthDiscussionSectionRedacted.pdf)
+
 (Some slides are redacted, if you want to see missing slides, see the Zoom recording
 of the section)
