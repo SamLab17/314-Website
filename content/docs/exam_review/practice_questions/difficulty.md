@@ -40,7 +40,7 @@ weight: 20
 
 ## Hard
 
-[Add to Linked List of Digits](/~slaberge/problem_pages/add_to_linked_list_digits)
+[Add to a Linked List of Digits](/~slaberge/problem_pages/add_to_linked_list_digits)
 
 [Binary Subtrees](/~slaberge/problem_pages/binary_subtrees)
 
