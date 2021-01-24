@@ -5,4 +5,6 @@ weight: 10
 
 # Discussion Section Slides
 
-Coming Soon!
+January 25, 2021
+
+[Slides Download](FirstDiscussionSection.pdf)
