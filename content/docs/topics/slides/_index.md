@@ -8,3 +8,8 @@ weight: 10
 January 25, 2021
 
 [Slides Download](FirstDiscussionSection.pdf)
+
+
+February 1, 2021
+
+[Slides Download](SecondDiscussionSectionRedacted.pdf)
