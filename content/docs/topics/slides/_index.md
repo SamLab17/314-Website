@@ -13,3 +13,8 @@ January 25, 2021
 February 1, 2021
 
 [Slides Download](SecondDiscussionSectionRedacted.pdf)
+
+February 8, 2021
+
+[Slides Download](ThirdDiscussionSection.pdf)
+
