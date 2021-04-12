@@ -29,3 +29,8 @@ March 28, 2021
 April 5, 2021
 
 [Slides Download](SeventhDiscussionSection.pdf)
+
+April 12, 2021
+
+[Slides Download](EighthDiscussionSection.pdf)
+
