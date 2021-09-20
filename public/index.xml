@@ -23,10 +23,10 @@
     
     <item>
       <title>Problems by Topic</title>
-      <link>https://www.cs.utexas.edu/~slaberge/docs/exam_review/practice_questions/topics/</link>
+      <link>https://www.cs.utexas.edu/~slaberge/docs/exam_review/programming_problems/topics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cs.utexas.edu/~slaberge/docs/exam_review/practice_questions/topics/</guid>
+      <guid>https://www.cs.utexas.edu/~slaberge/docs/exam_review/programming_problems/topics/</guid>
       <description>Programming Problems by Topic #  Array-based Lists #  Insert All Front
 Remove Odd Indices
 Sorted List Insert
@@ -87,10 +87,10 @@ Some of these commands have strange, un-intuitive names which still cause the mo
     
     <item>
       <title>Problems by Difficulty</title>
-      <link>https://www.cs.utexas.edu/~slaberge/docs/exam_review/practice_questions/difficulty/</link>
+      <link>https://www.cs.utexas.edu/~slaberge/docs/exam_review/programming_problems/difficulty/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.cs.utexas.edu/~slaberge/docs/exam_review/practice_questions/difficulty/</guid>
+      <guid>https://www.cs.utexas.edu/~slaberge/docs/exam_review/programming_problems/difficulty/</guid>
       <description>Programming Problems by Difficulty #  Easy #  Insert All Front
 Sum Tabs
 Get Grandparent

@@ -24,7 +24,7 @@
   </url>
   
   <url>
-    <loc>https://www.cs.utexas.edu/~slaberge/docs/exam_review/practice_questions/topics/</loc>
+    <loc>https://www.cs.utexas.edu/~slaberge/docs/exam_review/programming_problems/topics/</loc>
   </url>
   
   <url>
@@ -53,7 +53,7 @@
   </url>
   
   <url>
-    <loc>https://www.cs.utexas.edu/~slaberge/docs/exam_review/practice_questions/difficulty/</loc>
+    <loc>https://www.cs.utexas.edu/~slaberge/docs/exam_review/programming_problems/difficulty/</loc>
   </url>
   
   <url>
@@ -80,6 +80,10 @@
   
   <url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/index_template/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/tn_problems/</loc>
   </url>
   
   <url>
@@ -127,6 +131,10 @@
   </url>
   
   <url>
+    <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/maps_problems/</loc>
+  </url>
+  
+  <url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/maximum_indegree/</loc>
   </url>
   
@@ -143,7 +151,11 @@
   </url>
   
   <url>
-    <loc>https://www.cs.utexas.edu/~slaberge/docs/exam_review/practice_questions/</loc>
+    <loc>https://www.cs.utexas.edu/~slaberge/docs/exam_review/programming_problems/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/recursive_tracing/</loc>
   </url>
   
   <url>
@@ -156,6 +168,10 @@
   
   <url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/tutorials/gui/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.cs.utexas.edu/~slaberge/docs/exam_review/short_answer_problems/</loc>
   </url>
   
   <url>
