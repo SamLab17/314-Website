@@ -1,193 +1,101 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/topics/amortized/dynamic_arrays/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/topics/</loc>
     <lastmod>2020-05-16T19:31:31-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/topics/slides/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/exam_review/identities/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/exam_review/programming_problems/topics/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/vpn/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/tutorials/transferring/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/topics/amortized/</loc>
     <lastmod>2020-05-16T19:31:31-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/ssh/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/tutorials/linux/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/exam_review/programming_problems/difficulty/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/tutorials/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/tutorials/java/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/keys/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/</loc>
     <lastmod>2020-05-16T19:31:31-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/</loc>
     <lastmod>2020-05-16T19:31:31-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/index_template/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/tn_problems/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/add_to_linked_list_digits/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/binary_subtrees/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/bipartite_graphs/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/exam_review/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/get_grandparent/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/hash_set_difference/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/hash_table_contains/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/hash_table_resize/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/insert_all_front/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/linked_list_sums/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/maps_problems/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/maximum_indegree/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/merge_two_linked_lists/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/most_frequent_element/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/exam_review/programming_problems/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/recursive_tracing/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/remove_odd_indices/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/reverse_doubly_linked_list/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/lab_machines/tutorials/gui/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/docs/exam_review/short_answer_problems/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/sorted_list_insert/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/sum_tabs/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/tags/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.cs.utexas.edu/~slaberge/problem_pages/verify_bst/</loc>
   </url>
-  
 </urlset>

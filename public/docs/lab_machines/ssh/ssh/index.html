@@ -10,13 +10,15 @@ Prerequisites #   Make sure you know your CS account username and password Find 
 <meta property="og:description" content="Connecting with SSH #  We will connect to the Lab Machines using a protocol called SSH (for Secure Shell). SSH allows us to use a computer remotely by sending commands to it and then receiving the resulting output. For CS314, this means you will be able to run and test your assignments on the lab machines.
 Prerequisites #   Make sure you know your CS account username and password Find an available CS machine to connect to with this link If off-campus, make sure you are connected to the VPN or have set up your SSH keys  The SSH Command #  Firstly, you&rsquo;ll need to open your terminal application of choice." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/ssh/" />
+<meta property="og:url" content="https://www.cs.utexas.edu/~slaberge/docs/lab_machines/ssh/ssh/" /><meta property="article:section" content="docs" />
+
+
 
 <title>Connecting with SSH | Sam&#39;s CS314 Site</title>
 <link rel="manifest" href="/~slaberge/manifest.json">
 <link rel="icon" href="/~slaberge/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/~slaberge/book.min.b520f1fae039edc23c0595e64d3aea81e158153c5591e2253f30c5d1fc58f197.css" integrity="sha256-tSDx&#43;uA57cI8BZXmTTrqgeFYFTxVkeIlPzDF0fxY8Zc=">
-<script defer src="/~slaberge/en.search.min.841812126f5da9e884e00661eece76a7b059036bc74d27b4630e5267115caf13.js" integrity="sha256-hBgSEm9dqeiE4AZh7s52p7BZA2vHTSe0Yw5SZxFcrxM="></script>
+<link rel="stylesheet" href="/~slaberge/book.min.d8c37e65c2910d838f7dcdc7e3e75518ebdec46a051464a4d23762b44e866277.css" integrity="sha256-2MN&#43;ZcKRDYOPfc3H4&#43;dVGOvexGoFFGSk0jditE6GYnc=">
+<script defer src="/~slaberge/en.search.min.bfbee7a0d8ad4b7d1a9a7131806cecbf2fca4ad508f2f22f18b1bf488034251b.js" integrity="sha256-v77noNitS30amnExgGzsvy/KStUI8vIvGLG/SIA0JRs="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -369,7 +371,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -444,10 +446,10 @@ this:</p>
 <p><img src="/~slaberge/ssh_images/Terminal0.png" alt="Empty Terminal" /></p>
 <p>Now, we can issue the SSH command to open a connection with
 one of the UTCS Lab machines:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh &lt;CS Username&gt;@&lt;Machine Name&gt;.cs.utexas.edu
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh &lt;CS Username&gt;@&lt;Machine Name&gt;.cs.utexas.edu
 </code></pre></div><p>My username is <code>slaberge</code> and I&rsquo;ll be connecting to the
 <code>aggravation</code> machine. So the command I&rsquo;ll use looks like:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh slaberge@aggravation.cs.utexas.edu
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh slaberge@aggravation.cs.utexas.edu
 </code></pre></div><p><img src="/~slaberge/ssh_images/Terminal1.png" alt="SSH Command" /></p>
 <p>Press enter to issue the command. You will be asked to enter
 your CS account password. If you do not remember it, use
@@ -469,7 +471,7 @@ of the machine you connected to in the prompt, then you successfully connected!<
 <p><strong>All commands that you run from now on are actually being executed on the lab machine, not your personal computer.</strong>
 The output of the commands is then sent back to your computer for you to see them.</p>
 <p>To disconnect and end the SSH session, simply enter the following command:</p>
-<pre><code>logout
+<pre tabindex="0"><code>logout
 </code></pre></article>
  
       

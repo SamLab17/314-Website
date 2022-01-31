@@ -5,10 +5,6 @@
     <link>https://www.cs.utexas.edu/~slaberge/problem_pages/binary_subtrees/</link>
     <description>Recent content in Binary Subtrees on Sam&#39;s CS314 Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://www.cs.utexas.edu/~slaberge/problem_pages/binary_subtrees/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://www.cs.utexas.edu/~slaberge/problem_pages/binary_subtrees/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
