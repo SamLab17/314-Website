@@ -5,6 +5,6 @@ weight: 10
 
 # Discussion Section Slides
 
-September 20, 2021
+January 31, 2022
 
-[Slides Download](ds3.pdf)
+[Slides Download](ds1.pdf)
